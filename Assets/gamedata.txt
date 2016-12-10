@@ -863,15 +863,292 @@
       ]
     }
   ],
-  "problems": [
+"problems": [
+{
+  "id": 1,
+  "text": "El programador tiene un fuerte dolor de barriga y debe ausentarse una hora, ¿Qué deberíamos hacer?",
+  "answers": [
 	{
-		"text": "",
-		"answers": [
-			{
-				"text": "",
-				"effect": 0
-			}
-		]
+	  "text": "Intentar hacerlo nosotros",
+	  "effect": 3
+	},
+	{
+	  "text": "Buscar ayuda",
+	  "effect": 2
+	},
+	{
+	  "text": "Seguir sin él",
+	  "effect": 4
+	},
+	{
+	  "text": "Llorar mucho",
+	  "effect": 5
 	}
   ]
+},
+{
+  "id": 2,
+  "text": "Aún no hemos conseguido artista de sonido, ¿Qué deberíamos hacer?",
+  "answers": [
+	{
+	  "text": "Buscar alguno",
+	  "effect": 2
+	},
+	{
+	  "text": "Dar vueltas y gritar",
+	  "effect": 5
+	},
+	{
+	  "text": "Llamar a Paco",
+	  "effect": 4
+	},
+	{
+	  "text": "Buscar sonidos libres",
+	  "effect": 1
+	}
+  ]
+},
+{
+  "id": 3,
+  "text": "Nuestro diseñador gráfico todavía no ha venido y no tenemos material, ¿Qué podemos hacer?",
+  "answers": [
+	{
+	  "text": "Llamarlo",
+	  "effect": 2
+	},
+	{
+	  "text": "Seguir normalmente",
+	  "effect": 4
+	},
+	{
+	  "text": "Hacerlo nosotros",
+	  "effect": 3
+	},
+	{
+	  "text": "Buueeno...",
+	  "effect": 5
+	}
+  ]
+},
+{
+  "id": 4,
+  "text": "Los miembros del equipo discuten sobre el proyecto y no logran llegar a ninguna decisión,¿Qué quieres hacer?",
+  "answers": [
+	{
+	  "text": "Mirar al techo",
+	  "effect": 5
+	},
+	{
+	  "text": "Una votación",
+	  "effect": 1
+	},
+	{
+	  "text": "Irse",
+	  "effect": 5
+	},
+	{
+	  "text": "Exponer ideas",
+	  "effect": 2
+	}
+  ]
+},
+{
+  "id": 5,
+  "text": "A un miembro del equipo se le ha ocurrido realizar una modalidad Online, ¿Qué deberiamos hacer?",
+  "answers": [
+	{
+	  "text": "No",
+	  "effect": 1
+	},
+	{
+	  "text": "¡Qué guay!",
+	  "effect": 4
+	},
+	{
+	  "text": "Intentarlo",
+	  "effect": 5
+	},
+	{
+	  "text": "Suspirar",
+	  "effect": 5
+	}
+  ]
+},
+{
+  "id": 6,
+  "text": "Es la hora de comer, ¿Cuánto tiempo emplearemos en comer?",
+  "answers": [
+	{
+	  "text": "Quince minutos",
+	  "effect": 2
+	},
+	{
+	  "text": "Media hora",
+	  "effect": 3
+	},
+	{
+	  "text": "Una hora",
+	  "effect": 4
+	},
+	{
+	  "text": "¿Comer?",
+	  "effect": 1
+	}
+  ]
+},
+{
+  "id": 7,
+  "text": "Viene un mentor con cara de maldad y muy rápidamente hacia nosotros, ¡¿Qué hacemos?!",
+  "answers": [
+	{
+	  "text": "¡Piedad!",
+	  "effect": 5
+	},
+	{
+	  "text": "Fingir trabajar",
+	  "effect": 3
+	},
+	{
+	  "text": "Prestarle atención",
+	  "effect": 2
+	},
+	{
+	  "text": "Mi planeta me necesita",
+	  "effect": 5
+	}
+  ]
+},
+{
+  "id": 8,
+  "text": "¡Han venido las pizzas de TeleRoyers!",
+  "answers": [
+	{
+	  "text": "¡Corred insensatos!",
+	  "effect": 5
+	},
+	{
+	  "text": "Seguir trabajando",
+	  "effect": 1
+	},
+	{
+	  "text": "Coger un trozo",
+	  "effect": 2
+	},
+	{
+	  "text": "Coger una caja",
+	  "effect": 3
+	}
+  ]
+},
+{
+  "id": 9,
+  "text": "El proyecto se está alargando demasiado, ¿Qué hacemos?",
+  "answers": [
+	{
+	  "text": "Recortar",
+	  "effect": 1
+	},
+	{
+	  "text": "Darnos prisa",
+	  "effect": 2
+	},
+	{
+	  "text": "Culpar a alguien",
+	  "effect": 4
+	},
+	{
+	  "text": "Comer",
+	  "effect": 5
+	}
+  ]
+},
+{
+  "id": 10,
+  "text": "Han aparecido muchos bugs en el juego...",
+  "answers": [
+	{
+	  "text": "Intentar solucionarlos",
+	  "effect": 2
+	},
+	{
+	  "text": "Buscar ayuda",
+	  "effect": 2
+	},
+	{
+	  "text": "Huir",
+	  "effect": 4
+	},
+	{
+	  "text": "Buuufff...",
+	  "effect": 5
+	}
+  ]
+},
+{
+  "id": 11,
+  "text": "¡Se está quemando uno de nuestros ordenadores!",
+  "answers": [
+	{
+	  "text": "¡AAAAAAAHHHH!",
+	  "effect": 5
+	},
+	{
+	  "text": "#@*!!",
+	  "effect": 5
+	},
+	{
+	  "text": "¡Sálvese quien pueda!",
+	  "effect": 5
+	},
+	{
+	  "text": "Soy Batman",
+	  "effect": 5
+	}
+  ]
+},
+{
+  "id": 12,
+  "text": "¡Nos hemos quedado sin chocolatinas!",
+  "answers": [
+	{
+	  "text": "Ir a comprar",
+	  "effect": 7
+	},
+	{
+	  "text": "Lamentarse",
+	  "effect": 5
+	},
+	{
+	  "text": "Seguir trabajando",
+	  "effect": 1
+	},
+	{
+	  "text": "¡Noooooo!",
+	  "effect": 5
+	}
+  ]
+},
+{
+  "id": 12,
+  "text": "No puedo abrir mi chocolatina...",
+  "answers": [
+	{
+	  "text": "Risa malvada",
+	  "effect": 5
+	},
+	{
+	  "text": "Llorar",
+	  "effect": 5
+	},
+	{
+	  "text": "Mandar a trabajar",
+	  "effect": 1
+	},
+	{
+	  "text": "Ayudarle",
+	  "effect": 2
+	}
+  ]
+}
+]
 }
