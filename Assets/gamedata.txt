@@ -1,0 +1,877 @@
+{
+  "questions": [
+    {
+      "id": 0,
+      "text": "¿Qué quieres hacer?",
+      "answers": [
+        {
+          "text": "Plataforma",
+          "targetQuestionId": 100,
+          "waitTime": 2
+        },
+        {
+          "text": "FPS",
+          "targetQuestionId": 200,
+          "waitTime": 3
+        },
+        {
+          "text": "MMO",
+          "targetQuestionId": 300,
+          "waitTime": 4
+        },
+        {
+          "text": "Aventura Gráfica",
+          "targetQuestionId": 400,
+          "waitTime": 1
+        }
+      ]
+    },
+        {
+      "id": 100,
+      "text": "¿A qué se parece?",
+      "answers": [
+        {
+          "text": "Películas",
+          "targetQuestionId": 101,
+          "waitTime": 4
+        },
+        {
+          "text": "Libros",
+          "targetQuestionId": 101,
+          "waitTime": 6
+        },
+        {
+          "text": "Videojuegos",
+          "targetQuestionId": 101,
+          "waitTime": 1
+        },
+        {
+          "text": "Eventos",
+          "targetQuestionId": 101,
+          "waitTime": 2
+        }
+      ]
+    },
+    
+   {
+      "id": 101,
+      "text": "¿Qué forma tiene?",
+      "answers": [
+        {
+          "text": "Top Down",
+          "targetQuestionId": 102,
+          "waitTime": 6
+        },
+        {
+          "text": "3D",
+          "targetQuestionId": 102,
+          "waitTime": 4
+        },
+        {
+          "text": "Scroll Lateral",
+          "targetQuestionId": 102,
+          "waitTime": 1
+        },
+        {
+          "text": "Isométrico",
+          "targetQuestionId": 102,
+          "waitTime": 2
+        }
+      ]
+    },
+   {
+      "id": 102,
+      "text": "¿Qué motor usas?",
+      "answers": [
+        {
+          "text": "Motor Propio",
+          "targetQuestionId": 103,
+          "waitTime": 6
+        },
+        {
+          "text": "GameMaker",
+          "targetQuestionId": 103,
+          "waitTime": 2
+        },
+        {
+          "text": "Unity",
+          "targetQuestionId": 103,
+          "waitTime": 3
+        },
+        {
+          "text": "Unreal",
+          "targetQuestionId": 103,
+          "waitTime": 1
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "text": "¿En qué te centrarías para tu prototipo?",
+      "answers": [
+        {
+          "text": "Diálogos",
+          "targetQuestionId": 104,
+          "waitTime": 4
+        },
+        {
+          "text": "Sonido",
+          "targetQuestionId": 104,
+          "waitTime": 2
+        },
+        {
+          "text": "Mecánica",
+          "targetQuestionId": 104,
+          "waitTime": 1
+        },
+        {
+          "text": "Personajes",
+          "targetQuestionId": 104,
+          "waitTime": 3
+        }
+      ]
+    },
+     {
+      "id": 104,
+      "text": "Tienes que empezar a diseñar los elementos. ¡Elige!",
+      "answers": [
+        {
+          "text": "Interiores",
+          "targetQuestionId": 105,
+          "waitTime": 2
+        },
+        {
+          "text": "Escenarios",
+          "targetQuestionId": 105,
+          "waitTime": 1
+        },
+        {
+          "text": "Iluminación",
+          "targetQuestionId": 105,
+          "waitTime": 3
+        },
+        {
+          "text": "Animales",
+          "targetQuestionId": 105,
+          "waitTime": 6
+        }
+      ]
+    },
+	{
+      "id": 105,
+      "text": "¿Quién resuelve el juego?",
+      "answers": [
+        {
+          "text": "Un protagonista",
+          "targetQuestionId": 106,
+          "waitTime": 1
+        },
+        {
+          "text": "Un grupo",
+          "targetQuestionId": 106,
+          "waitTime": 6
+        },
+        {
+          "text": "Un Superhéroe",
+          "targetQuestionId": 106,
+          "waitTime": 4
+        },
+        {
+          "text": "Un Gato",
+          "targetQuestionId": 106,
+          "waitTime": 1
+        }
+      ]
+    },
+	{
+      "id": 106,
+      "text": "¿Cómo pruebas el juego?",
+      "answers": [
+        {
+          "text": "Pedir ayuda",
+          "targetQuestionId": 107,
+          "waitTime": 2
+        },
+        {
+          "text": "Sobornar",
+          "targetQuestionId": 107,
+          "waitTime": 1
+        },
+        {
+          "text": "Testear??",
+          "targetQuestionId": 107,
+          "waitTime": 6
+        },
+        {
+          "text": "Entre nosotros",
+          "targetQuestionId": 107,
+          "waitTime": 4
+        }
+      ]
+    },
+	{
+      "id": 107,
+      "text": "Retoques finales...",
+      "answers": [
+        {
+          "text": "Gráficos",
+          "targetQuestionId": 999,
+          "waitTime": 2
+        },
+        {
+          "text": "Está perfecto",
+          "targetQuestionId": 999,
+          "waitTime": 6
+        },
+        {
+          "text": "Texto",
+          "targetQuestionId": 999,
+          "waitTime": 4
+        },
+        {
+          "text": "Sonido",
+          "targetQuestionId": 999,
+          "waitTime": 1
+        }
+      ]
+    },
+	{
+      "id": 200,
+      "text": "¿A qué se parece?",
+      "answers": [
+        {
+          "text": "Películas",
+          "targetQuestionId": 201,
+          "waitTime": 2
+        },
+        {
+          "text": "Libros",
+          "targetQuestionId": 201,
+          "waitTime": 6
+        },
+        {
+          "text": "Videojuegos",
+          "targetQuestionId": 201,
+          "waitTime": 1
+        },
+        {
+          "text": "Eventos",
+          "targetQuestionId": 201,
+          "waitTime": 3
+        }
+      ]
+    },
+    
+   {
+      "id": 201,
+      "text": "¿Qué forma tiene?",
+      "answers": [
+        {
+          "text": "Top Down",
+          "targetQuestionId": 202,
+          "waitTime": 6
+        },
+        {
+          "text": "3D",
+          "targetQuestionId": 202,
+          "waitTime": 2
+        },
+        {
+          "text": "Scroll Lateral",
+          "targetQuestionId": 202,
+          "waitTime": 3
+        },
+        {
+          "text": "Isométrico",
+          "targetQuestionId": 202,
+          "waitTime": 4
+        }
+      ]
+    },
+   {
+      "id": 202,
+      "text": "¿Qué motor usas?",
+      "answers": [
+        {
+          "text": "Motor Propio",
+          "targetQuestionId": 203,
+          "waitTime": 6
+        },
+        {
+          "text": "GameMaker",
+          "targetQuestionId": 203,
+          "waitTime": 2
+        },
+        {
+          "text": "Unity",
+          "targetQuestionId": 203,
+          "waitTime": 3
+        },
+        {
+          "text": "Unreal",
+          "targetQuestionId": 203,
+          "waitTime": 1
+        }
+      ]
+    },
+    {
+      "id": 203,
+      "text": "¿En qué te centrarías para tu prototipo?",
+      "answers": [
+        {
+          "text": "Diálogos",
+          "targetQuestionId": 204,
+          "waitTime": 4
+        },
+        {
+          "text": "Sonido",
+          "targetQuestionId": 204,
+          "waitTime": 2
+        },
+        {
+          "text": "Mecánica",
+          "targetQuestionId": 204,
+          "waitTime": 1
+        },
+        {
+          "text": "Personajes",
+          "targetQuestionId": 204,
+          "waitTime": 3
+        }
+      ]
+    },
+     {
+      "id": 204,
+      "text": "Tienes que empezar a diseñar los elementos. ¡Dispara!",
+      "answers": [
+        {
+          "text": "Interiores",
+          "targetQuestionId": 205,
+          "waitTime": 4
+        },
+        {
+          "text": "Escenarios",
+          "targetQuestionId": 205,
+          "waitTime": 1
+        },
+        {
+          "text": "Iluminación",
+          "targetQuestionId": 205,
+          "waitTime": 4
+        },
+        {
+          "text": "Armamento",
+          "targetQuestionId": 205,
+          "waitTime": 2
+        }
+      ]
+    },
+	{
+      "id": 205,
+      "text": "¿Quién resuelve el juego?",
+      "answers": [
+        {
+          "text": "Un protagonista",
+          "targetQuestionId": 206,
+          "waitTime": 2
+        },
+        {
+          "text": "Un grupo",
+          "targetQuestionId": 206,
+          "waitTime": 4
+        },
+        {
+          "text": "Un Superhéroe",
+          "targetQuestionId": 206,
+          "waitTime": 1
+        },
+        {
+          "text": "Un Gato",
+          "targetQuestionId": 206,
+          "waitTime": 6
+        }
+      ]
+    },
+	{
+      "id": 206,
+      "text": "¿Cómo pruebas el juego?",
+      "answers": [
+        {
+          "text": "Pedir ayuda",
+          "targetQuestionId": 207,
+          "waitTime": 2
+        },
+        {
+          "text": "Sobornar",
+          "targetQuestionId": 207,
+          "waitTime": 1
+        },
+        {
+          "text": "Testear??",
+          "targetQuestionId": 207,
+          "waitTime": 6
+        },
+        {
+          "text": "Entre nosotros",
+          "targetQuestionId": 207,
+          "waitTime": 4
+        }
+      ]
+    },
+	{
+      "id": 207,
+      "text": "Retoques finales...",
+      "answers": [
+        {
+          "text": "Gráficos",
+          "targetQuestionId": 999,
+          "waitTime": 1
+        },
+        {
+          "text": "Está perfecto",
+          "targetQuestionId": 999,
+          "waitTime": 6
+        },
+        {
+          "text": "Texto",
+          "targetQuestionId": 999,
+          "waitTime": 4
+        },
+        {
+          "text": "Sonido",
+          "targetQuestionId": 999,
+          "waitTime": 3
+        }
+      ]
+    },
+	{
+      "id": 300,
+      "text": "¿A qué se parece?",
+      "answers": [
+        {
+          "text": "Películas",
+          "targetQuestionId": 301,
+          "waitTime": 2
+        },
+        {
+          "text": "Libros",
+          "targetQuestionId": 301,
+          "waitTime": 4
+        },
+        {
+          "text": "Videojuegos",
+          "targetQuestionId": 301,
+          "waitTime": 1
+        },
+        {
+          "text": "Eventos",
+          "targetQuestionId": 301,
+          "waitTime": 3
+        }
+      ]
+    },
+    
+   {
+      "id": 301,
+      "text": "¿Qué forma tiene?",
+      "answers": [
+        {
+          "text": "Top Down",
+          "targetQuestionId": 302,
+          "waitTime": 4
+        },
+        {
+          "text": "3D",
+          "targetQuestionId": 302,
+          "waitTime": 6
+        },
+        {
+          "text": "Scroll Lateral",
+          "targetQuestionId": 302,
+          "waitTime": 3
+        },
+        {
+          "text": "Isométrico",
+          "targetQuestionId": 302,
+          "waitTime": 1
+        }
+      ]
+    },
+   {
+      "id": 302,
+      "text": "¿Qué motor usas?",
+      "answers": [
+        {
+          "text": "Motor Propio",
+          "targetQuestionId": 303,
+          "waitTime": 6
+        },
+        {
+          "text": "GameMaker",
+          "targetQuestionId": 303,
+          "waitTime": 2
+        },
+        {
+          "text": "Unity",
+          "targetQuestionId": 303,
+          "waitTime": 3
+        },
+        {
+          "text": "Unreal",
+          "targetQuestionId": 303,
+          "waitTime": 1
+        }
+      ]
+    },
+    {
+      "id": 303,
+      "text": "¿En qué te centrarías para tu prototipo?",
+      "answers": [
+        {
+          "text": "Diálogos",
+          "targetQuestionId": 304,
+          "waitTime": 4
+        },
+        {
+          "text": "Sonido",
+          "targetQuestionId": 304,
+          "waitTime": 3
+        },
+        {
+          "text": "Mecánica",
+          "targetQuestionId": 304,
+          "waitTime": 1
+        },
+        {
+          "text": "Personajes",
+          "targetQuestionId": 304,
+          "waitTime": 2
+        }
+      ]
+    },
+     {
+      "id": 304,
+      "text": "Tienes que empezar a diseñar los elementos. ¡Elige!",
+      "answers": [
+        {
+          "text": "Interiores",
+          "targetQuestionId": 305,
+          "waitTime": 4
+        },
+        {
+          "text": "Escenarios",
+          "targetQuestionId": 305,
+          "waitTime": 1
+        },
+        {
+          "text": "Iluminación",
+          "targetQuestionId": 305,
+          "waitTime": 2
+        },
+        {
+          "text": "Animales",
+          "targetQuestionId": 305,
+          "waitTime": 6
+        }
+      ]
+    },
+	{
+      "id": 305,
+      "text": "¿Quién resuelve el juego?",
+      "answers": [
+        {
+          "text": "Un protagonista",
+          "targetQuestionId": 306,
+          "waitTime": 1
+        },
+        {
+          "text": "Un grupo",
+          "targetQuestionId": 306,
+          "waitTime": 3
+        },
+        {
+          "text": "Un Superhéroe",
+          "targetQuestionId": 306,
+          "waitTime": 3
+        },
+        {
+          "text": "Un Gato",
+          "targetQuestionId": 306,
+          "waitTime": 6
+        }
+      ]
+    },
+	{
+      "id": 306,
+      "text": "¿Cómo pruebas el juego?",
+      "answers": [
+        {
+          "text": "Pedir ayuda",
+          "targetQuestionId": 307,
+          "waitTime": 2
+        },
+        {
+          "text": "Sobornar",
+          "targetQuestionId": 307,
+          "waitTime": 1
+        },
+        {
+          "text": "Testear??",
+          "targetQuestionId": 307,
+          "waitTime": 6
+        },
+        {
+          "text": "Entre nosotros",
+          "targetQuestionId": 307,
+          "waitTime": 4
+        }
+      ]
+    },
+	{
+      "id": 307,
+      "text": "Retoques finales...",
+      "answers": [
+        {
+          "text": "Gráficos",
+          "targetQuestionId": 999,
+          "waitTime": 2
+        },
+        {
+          "text": "Está perfecto",
+          "targetQuestionId": 999,
+          "waitTime": 6
+        },
+        {
+          "text": "Texto",
+          "targetQuestionId": 999,
+          "waitTime": 2
+        },
+        {
+          "text": "Sonido",
+          "targetQuestionId": 999,
+          "waitTime": 3
+        }
+      ]
+    },
+	{
+      "id": 400,
+      "text": "¿A qué se parece?",
+      "answers": [
+        {
+          "text": "Películas",
+          "targetQuestionId": 401,
+          "waitTime": 1
+        },
+        {
+          "text": "Libros",
+          "targetQuestionId": 401,
+          "waitTime": 2
+        },
+        {
+          "text": "Videojuegos",
+          "targetQuestionId": 401,
+          "waitTime": 3
+        },
+        {
+          "text": "Eventos",
+          "targetQuestionId": 401,
+          "waitTime": 4
+        }
+      ]
+    },
+    
+   {
+      "id": 401,
+      "text": "¿Qué forma tiene?",
+      "answers": [
+        {
+          "text": "Top Down",
+          "targetQuestionId": 402,
+          "waitTime": 2
+        },
+        {
+          "text": "3D",
+          "targetQuestionId": 402,
+          "waitTime": 6
+        },
+        {
+          "text": "Scroll Lateral",
+          "targetQuestionId": 402,
+          "waitTime": 3
+        },
+        {
+          "text": "Isométrico",
+          "targetQuestionId": 402,
+          "waitTime": 1
+        }
+      ]
+    },
+   {
+      "id": 402,
+      "text": "¿Qué motor usas?",
+      "answers": [
+        {
+          "text": "Motor Propio",
+          "targetQuestionId": 403,
+          "waitTime": 6
+        },
+        {
+          "text": "GameMaker",
+          "targetQuestionId": 403,
+          "waitTime": 2
+        },
+        {
+          "text": "Unity",
+          "targetQuestionId": 403,
+          "waitTime": 3
+        },
+        {
+          "text": "Unreal",
+          "targetQuestionId": 403,
+          "waitTime": 1
+        }
+      ]
+    },
+    {
+      "id": 403,
+      "text": "¿En qué te centrarías para tu prototipo?",
+      "answers": [
+        {
+          "text": "Diálogos",
+          "targetQuestionId": 404,
+          "waitTime": 1
+        },
+        {
+          "text": "Sonido",
+          "targetQuestionId": 404,
+          "waitTime": 6
+        },
+        {
+          "text": "Mecánica",
+          "targetQuestionId": 404,
+          "waitTime": 3
+        },
+        {
+          "text": "Personajes",
+          "targetQuestionId": 404,
+          "waitTime": 4
+        }
+      ]
+    },
+     {
+      "id": 404,
+      "text": "Tienes que empezar a diseñar los elementos. ¡Elige!",
+      "answers": [
+        {
+          "text": "Interiores",
+          "targetQuestionId": 405,
+          "waitTime": 1
+        },
+        {
+          "text": "Escenarios",
+          "targetQuestionId": 405,
+          "waitTime": 2
+        },
+        {
+          "text": "Iluminación",
+          "targetQuestionId": 405,
+          "waitTime": 4
+        },
+        {
+          "text": "Animales",
+          "targetQuestionId": 405,
+          "waitTime": 3
+        }
+      ]
+    },
+	{
+      "id": 405,
+      "text": "¿Quién resuelve el juego?",
+      "answers": [
+        {
+          "text": "Un protagonista",
+          "targetQuestionId": 406,
+          "waitTime": 1
+        },
+        {
+          "text": "Un grupo",
+          "targetQuestionId": 406,
+          "waitTime": 2
+        },
+        {
+          "text": "Un Superhéroe",
+          "targetQuestionId": 406,
+          "waitTime": 6
+        },
+        {
+          "text": "Un Gato",
+          "targetQuestionId": 406,
+          "waitTime": 4
+        }
+      ]
+    },
+	{
+      "id": 406,
+      "text": "¿Cómo pruebas el juego?",
+      "answers": [
+        {
+          "text": "Pedir ayuda",
+          "targetQuestionId": 407,
+          "waitTime": 2
+        },
+        {
+          "text": "Sobornar",
+          "targetQuestionId": 407,
+          "waitTime": 1
+        },
+        {
+          "text": "Testear??",
+          "targetQuestionId": 407,
+          "waitTime": 6
+        },
+        {
+          "text": "Entre nosotros",
+          "targetQuestionId": 407,
+          "waitTime": 4
+        }
+      ]
+    },
+	{
+      "id": 407,
+      "text": "Retoques finales...",
+      "answers": [
+        {
+          "text": "Gráficos",
+          "targetQuestionId": 999,
+          "waitTime": 4
+        },
+        {
+          "text": "Está perfecto",
+          "targetQuestionId": 999,
+          "waitTime": 6
+        },
+        {
+          "text": "Texto",
+          "targetQuestionId": 999,
+          "waitTime": 1
+        },
+        {
+          "text": "Sonido",
+          "targetQuestionId": 999,
+          "waitTime": 3
+        }
+      ]
+    }
+  ],
+  "problems": [
+	{
+		"text": "",
+		"answers": [
+			{
+				"text": "",
+				"effect": 0
+			}
+		]
+	}
+  ]
+}
