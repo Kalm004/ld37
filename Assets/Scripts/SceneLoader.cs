@@ -11,7 +11,7 @@ public class SceneLoader : MonoBehaviour {
 	}
 	public void loadCreditScene()
 	{
-		Debug.Log ("Creditos");
+		SceneManager.LoadScene ("CreditScene");
 	}
 	public void exit()
 	{
