@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class GameHandler : MonoBehaviour {
+    private string IntroText = "Bienvenidos a EscapeJam. \nEstais encerrados en esta habitación hasta que termineis vuestro juego... si la habitación no termina primero con vosotros.";
+
     private Dictionary<int, QuestionModel> questions = new Dictionary<int, QuestionModel>();
     private ProblemModel[] problems;
     private QuestionModel currentQuestion;
@@ -13,6 +15,7 @@ public class GameHandler : MonoBehaviour {
     private float problemProbability = 0.2f;
     private int finaltQuestion = 999;
     private float timeToLose = 60;
+    private float shakeDuration = 0.1f;
 
     public TextAsset textAsset;
     public Text questionText;
@@ -38,6 +41,8 @@ public class GameHandler : MonoBehaviour {
 
     public AudioSource heartBeat;
 
+    public GameObject answerButtons;
+
     private GameObject[] currentBalloons;
 
     private float? timeToSelect = null;
@@ -50,12 +55,22 @@ public class GameHandler : MonoBehaviour {
 
     private float timeToHideExclamation = 0;
 
-    private bool finished = false;
+    public bool finished = true;
 
     private float TimeToHeartBeat = 0;
 
+    private float hideIntroTime;
+
+    private float shakeAmt = 0;
+
+    private float timeToStopShake = 0;
+
+    private Vector3 oldPosition;
+
     // Use this for initialization
     void Start () {
+        oldPosition = transform.position;
+        finished = true;
         discusionSound = GetComponent<AudioSource>();
         GameData gameData = ObjectsFactory.getGameData(textAsset.text);
         problems = gameData.problems;
@@ -71,17 +86,42 @@ public class GameHandler : MonoBehaviour {
         {
             questions.Add(question.id, question);
         }
-        currentQuestion = questions[0];
-        selectQuestion(currentQuestion);
+        hideIntroTime = Time.time + 5;
+        questionText.text = IntroText;
+        answerButtons.SetActive(false);
     }
 	
 	// Update is called once per frame
 	void Update () {
+        if (timeToStopShake > 0 && Time.time > timeToStopShake)
+        {
+            shakeAmt = 0;
+            timeToStopShake = 0;
+            transform.position = oldPosition;
+        }
+
+        CameraShake();
+        if (hideIntroTime > 0)
+        {
+            if (Time.time > hideIntroTime)
+            {
+                hideIntroTime = 0;
+                currentQuestion = questions[0];
+                selectQuestion(currentQuestion);
+                answerButtons.SetActive(true);
+                finished = false;
+            }
+            return;
+        }
         if (!finished)
         {
-            if (TimeToHeartBeat == 0 && Time.time > (timeToLose - 10))
+            if ((TimeToHeartBeat == 0 && Time.time > (timeToLose - 50)) || (TimeToHeartBeat > 0 && Time.time > TimeToHeartBeat))
             {
                 heartBeat.Play();
+                oldPosition = transform.position;
+                shakeAmt = 0.1f;
+                timeToStopShake = Time.time + shakeDuration;
+                TimeToHeartBeat = Time.time + 1;
             }
             if (Time.time > timeToLose)
             {
@@ -165,6 +205,17 @@ public class GameHandler : MonoBehaviour {
                 }
                 image.fillAmount = currentProgress;
             }
+        }
+    }
+
+    void CameraShake()
+    {
+        if (shakeAmt > 0)
+        {
+            float quakeAmt = Random.value * shakeAmt * 2 - shakeAmt;
+            Vector3 pp = transform.position;
+            pp.y += quakeAmt; // can also add to x and/or z
+            transform.position = pp;
         }
     }
 

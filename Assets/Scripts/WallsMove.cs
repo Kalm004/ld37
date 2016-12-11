@@ -10,6 +10,7 @@ public class WallsMove : MonoBehaviour {
     public GameObject wall2;
     public GameObject floor;
     private Camera camera;
+    public GameHandler gameHandler;
 
 	// Use this for initialization
 	void Start () {
@@ -19,9 +20,12 @@ public class WallsMove : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        wall1.transform.Translate(new Vector3(speed * speedOther * Time.deltaTime, -speed * Time.deltaTime));
-        wall2.transform.Translate(new Vector3(-speed * Time.deltaTime, -speed * speedOther * Time.deltaTime));
-        floor.transform.localScale = new Vector3(floor.transform.localScale.x - scaleSpeed * Time.deltaTime, floor.transform.localScale.y - scaleSpeed * Time.deltaTime);
-        camera.orthographicSize -= 0.03f * Time.deltaTime;
+        if (!gameHandler.finished)
+        {
+            wall1.transform.Translate(new Vector3(speed * speedOther * Time.deltaTime, -speed * Time.deltaTime));
+            wall2.transform.Translate(new Vector3(-speed * Time.deltaTime, -speed * speedOther * Time.deltaTime));
+            floor.transform.localScale = new Vector3(floor.transform.localScale.x - scaleSpeed * Time.deltaTime, floor.transform.localScale.y - scaleSpeed * Time.deltaTime);
+            camera.orthographicSize -= 0.03f * Time.deltaTime;
+        }
     }
 }
