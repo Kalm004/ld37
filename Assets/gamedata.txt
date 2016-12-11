@@ -12,28 +12,28 @@
         {
           "text": "FPS",
           "targetQuestionId": 200,
-          "waitTime": 3
+          "waitTime": 4
         },
         {
           "text": "MMO",
           "targetQuestionId": 300,
-          "waitTime": 4
+          "waitTime": 5
         },
         {
           "text": "Aventura Gráfica",
           "targetQuestionId": 400,
-          "waitTime": 1
+          "waitTime": 2
         }
       ]
     },
         {
       "id": 100,
-      "text": "¿A qué se parece?",
+      "text": "¿En dónde te inspiras?",
       "answers": [
         {
           "text": "Películas",
           "targetQuestionId": 101,
-          "waitTime": 4
+          "waitTime": 5
         },
         {
           "text": "Libros",
@@ -43,19 +43,19 @@
         {
           "text": "Videojuegos",
           "targetQuestionId": 101,
-          "waitTime": 1
+          "waitTime": 2
         },
         {
-          "text": "Eventos",
+          "text": "Youtube",
           "targetQuestionId": 101,
-          "waitTime": 2
+          "waitTime": 3
         }
       ]
     },
     
    {
       "id": 101,
-      "text": "¿Qué forma tiene?",
+      "text": "¿Qué gráficos vas a usar?",
       "answers": [
         {
           "text": "Top Down",
@@ -70,7 +70,7 @@
         {
           "text": "Scroll Lateral",
           "targetQuestionId": 102,
-          "waitTime": 1
+          "waitTime": 2
         },
         {
           "text": "Isométrico",
@@ -101,7 +101,7 @@
         {
           "text": "Unreal",
           "targetQuestionId": 103,
-          "waitTime": 1
+          "waitTime": 2
         }
       ]
     },
@@ -112,7 +112,7 @@
         {
           "text": "Diálogos",
           "targetQuestionId": 104,
-          "waitTime": 4
+          "waitTime": 6
         },
         {
           "text": "Sonido",
@@ -122,18 +122,18 @@
         {
           "text": "Mecánica",
           "targetQuestionId": 104,
-          "waitTime": 1
+          "waitTime": 2
         },
         {
           "text": "Personajes",
           "targetQuestionId": 104,
-          "waitTime": 3
+          "waitTime": 4
         }
       ]
     },
      {
       "id": 104,
-      "text": "Tienes que empezar a diseñar los elementos. ¡Elige!",
+      "text": "Hay que diseñar los elementos. ¡Elige!",
       "answers": [
         {
           "text": "Interiores",
@@ -143,12 +143,12 @@
         {
           "text": "Escenarios",
           "targetQuestionId": 105,
-          "waitTime": 1
+          "waitTime": 2
         },
         {
           "text": "Iluminación",
           "targetQuestionId": 105,
-          "waitTime": 3
+          "waitTime": 4
         },
         {
           "text": "Animales",
@@ -162,9 +162,9 @@
       "text": "¿Quién resuelve el juego?",
       "answers": [
         {
-          "text": "Un protagonista",
+          "text": "Mary Poppins",
           "targetQuestionId": 106,
-          "waitTime": 1
+          "waitTime": 2
         },
         {
           "text": "Un grupo",
@@ -179,7 +179,7 @@
         {
           "text": "Un Gato",
           "targetQuestionId": 106,
-          "waitTime": 1
+          "waitTime": 2
         }
       ]
     },
@@ -195,7 +195,7 @@
         {
           "text": "Sobornar",
           "targetQuestionId": 107,
-          "waitTime": 1
+          "waitTime": 2
         },
         {
           "text": "Testear??",
@@ -203,7 +203,7 @@
           "waitTime": 6
         },
         {
-          "text": "Entre nosotros",
+          "text": "Yo mismo",
           "targetQuestionId": 107,
           "waitTime": 4
         }
@@ -231,13 +231,13 @@
         {
           "text": "Sonido",
           "targetQuestionId": 999,
-          "waitTime": 1
+          "waitTime": 2
         }
       ]
     },
 	{
       "id": 200,
-      "text": "¿A qué se parece?",
+      "text": "¿En dónde te inspiras?",
       "answers": [
         {
           "text": "Películas",
@@ -252,19 +252,19 @@
         {
           "text": "Videojuegos",
           "targetQuestionId": 201,
-          "waitTime": 1
+          "waitTime": 2
         },
         {
-          "text": "Eventos",
+          "text": "Disney",
           "targetQuestionId": 201,
-          "waitTime": 3
+          "waitTime": 4
         }
       ]
     },
     
    {
       "id": 201,
-      "text": "¿Qué forma tiene?",
+      "text": "¿Qué gráficos vas a usar?",
       "answers": [
         {
           "text": "Top Down",
@@ -310,7 +310,7 @@
         {
           "text": "Unreal",
           "targetQuestionId": 203,
-          "waitTime": 1
+          "waitTime": 2
         }
       ]
     },
@@ -321,7 +321,7 @@
         {
           "text": "Diálogos",
           "targetQuestionId": 204,
-          "waitTime": 4
+          "waitTime": 6
         },
         {
           "text": "Sonido",
@@ -331,18 +331,18 @@
         {
           "text": "Mecánica",
           "targetQuestionId": 204,
-          "waitTime": 1
+          "waitTime": 2
         },
         {
           "text": "Personajes",
           "targetQuestionId": 204,
-          "waitTime": 3
+          "waitTime": 4
         }
       ]
     },
      {
       "id": 204,
-      "text": "Tienes que empezar a diseñar los elementos. ¡Dispara!",
+      "text": "Hay que diseñar los elementos. ¡Elige!",
       "answers": [
         {
           "text": "Interiores",
@@ -352,7 +352,7 @@
         {
           "text": "Escenarios",
           "targetQuestionId": 205,
-          "waitTime": 1
+          "waitTime": 2
         },
         {
           "text": "Iluminación",
@@ -371,7 +371,7 @@
       "text": "¿Quién resuelve el juego?",
       "answers": [
         {
-          "text": "Un protagonista",
+          "text": "Predator",
           "targetQuestionId": 206,
           "waitTime": 2
         },
@@ -383,7 +383,7 @@
         {
           "text": "Un Superhéroe",
           "targetQuestionId": 206,
-          "waitTime": 1
+          "waitTime": 2
         },
         {
           "text": "Un Gato",
@@ -404,7 +404,7 @@
         {
           "text": "Sobornar",
           "targetQuestionId": 207,
-          "waitTime": 1
+          "waitTime": 2
         },
         {
           "text": "Testear??",
@@ -412,7 +412,7 @@
           "waitTime": 6
         },
         {
-          "text": "Entre nosotros",
+          "text": "Yo mismo",
           "targetQuestionId": 207,
           "waitTime": 4
         }
@@ -425,7 +425,7 @@
         {
           "text": "Gráficos",
           "targetQuestionId": 999,
-          "waitTime": 1
+          "waitTime": 2
         },
         {
           "text": "Está perfecto",
@@ -446,7 +446,7 @@
     },
 	{
       "id": 300,
-      "text": "¿A qué se parece?",
+      "text": "¿En dónde te inspiras?",
       "answers": [
         {
           "text": "Películas",
@@ -461,19 +461,19 @@
         {
           "text": "Videojuegos",
           "targetQuestionId": 301,
-          "waitTime": 1
+          "waitTime": 2
         },
         {
-          "text": "Eventos",
+          "text": "Periódicos",
           "targetQuestionId": 301,
-          "waitTime": 3
+          "waitTime": 6
         }
       ]
     },
     
    {
       "id": 301,
-      "text": "¿Qué forma tiene?",
+      "text": "¿Qué gráficos vas a usar?",
       "answers": [
         {
           "text": "Top Down",
@@ -493,7 +493,7 @@
         {
           "text": "Isométrico",
           "targetQuestionId": 302,
-          "waitTime": 1
+          "waitTime": 2
         }
       ]
     },
@@ -519,7 +519,7 @@
         {
           "text": "Unreal",
           "targetQuestionId": 303,
-          "waitTime": 1
+          "waitTime": 2
         }
       ]
     },
@@ -540,7 +540,7 @@
         {
           "text": "Mecánica",
           "targetQuestionId": 304,
-          "waitTime": 1
+          "waitTime": 2
         },
         {
           "text": "Personajes",
@@ -551,17 +551,17 @@
     },
      {
       "id": 304,
-      "text": "Tienes que empezar a diseñar los elementos. ¡Elige!",
+      "text": "Hay que diseñar los elementos. ¡Elige!",
       "answers": [
         {
-          "text": "Interiores",
+          "text": "Decoración",
           "targetQuestionId": 305,
           "waitTime": 4
         },
         {
           "text": "Escenarios",
           "targetQuestionId": 305,
-          "waitTime": 1
+          "waitTime": 2
         },
         {
           "text": "Iluminación",
@@ -580,22 +580,22 @@
       "text": "¿Quién resuelve el juego?",
       "answers": [
         {
-          "text": "Un protagonista",
+          "text": "Godzilla",
           "targetQuestionId": 306,
-          "waitTime": 1
+          "waitTime": 4
         },
         {
           "text": "Un grupo",
           "targetQuestionId": 306,
-          "waitTime": 3
+          "waitTime": 4
         },
         {
           "text": "Un Superhéroe",
           "targetQuestionId": 306,
-          "waitTime": 3
+          "waitTime": 2
         },
         {
-          "text": "Un Gato",
+          "text": "Una Cabra",
           "targetQuestionId": 306,
           "waitTime": 6
         }
@@ -613,7 +613,7 @@
         {
           "text": "Sobornar",
           "targetQuestionId": 307,
-          "waitTime": 1
+          "waitTime": 2
         },
         {
           "text": "Testear??",
@@ -621,7 +621,7 @@
           "waitTime": 6
         },
         {
-          "text": "Entre nosotros",
+          "text": "Yo mismo",
           "targetQuestionId": 307,
           "waitTime": 4
         }
@@ -649,18 +649,18 @@
         {
           "text": "Sonido",
           "targetQuestionId": 999,
-          "waitTime": 3
+          "waitTime": 4
         }
       ]
     },
 	{
       "id": 400,
-      "text": "¿A qué se parece?",
+      "text": "¿En dónde te inspiras?",
       "answers": [
         {
           "text": "Películas",
           "targetQuestionId": 401,
-          "waitTime": 1
+          "waitTime": 2
         },
         {
           "text": "Libros",
@@ -670,24 +670,24 @@
         {
           "text": "Videojuegos",
           "targetQuestionId": 401,
-          "waitTime": 3
+          "waitTime": 4
         },
         {
-          "text": "Eventos",
+          "text": "Calendario",
           "targetQuestionId": 401,
-          "waitTime": 4
+          "waitTime": 6
         }
       ]
     },
     
    {
       "id": 401,
-      "text": "¿Qué forma tiene?",
+      "text": "¿Qué gráficos vas a usar?",
       "answers": [
         {
           "text": "Top Down",
           "targetQuestionId": 402,
-          "waitTime": 2
+          "waitTime": 3
         },
         {
           "text": "3D",
@@ -697,12 +697,12 @@
         {
           "text": "Scroll Lateral",
           "targetQuestionId": 402,
-          "waitTime": 3
+          "waitTime": 4
         },
         {
           "text": "Isométrico",
           "targetQuestionId": 402,
-          "waitTime": 1
+          "waitTime": 2
         }
       ]
     },
@@ -728,7 +728,7 @@
         {
           "text": "Unreal",
           "targetQuestionId": 403,
-          "waitTime": 1
+          "waitTime": 2
         }
       ]
     },
@@ -739,7 +739,7 @@
         {
           "text": "Diálogos",
           "targetQuestionId": 404,
-          "waitTime": 1
+          "waitTime": 2
         },
         {
           "text": "Sonido",
@@ -760,27 +760,27 @@
     },
      {
       "id": 404,
-      "text": "Tienes que empezar a diseñar los elementos. ¡Elige!",
+      "text": "Hay que diseñar los elementos. ¡Elige!",
       "answers": [
+        {
+          "text": "Decoración",
+          "targetQuestionId": 405,
+          "waitTime": 6
+        },
         {
           "text": "Interiores",
           "targetQuestionId": 405,
-          "waitTime": 1
+          "waitTime": 2
         },
         {
           "text": "Escenarios",
           "targetQuestionId": 405,
-          "waitTime": 2
+          "waitTime": 6
         },
         {
           "text": "Iluminación",
           "targetQuestionId": 405,
           "waitTime": 4
-        },
-        {
-          "text": "Animales",
-          "targetQuestionId": 405,
-          "waitTime": 3
         }
       ]
     },
@@ -789,9 +789,9 @@
       "text": "¿Quién resuelve el juego?",
       "answers": [
         {
-          "text": "Un protagonista",
+          "text": "Un detective",
           "targetQuestionId": 406,
-          "waitTime": 1
+          "waitTime": 2
         },
         {
           "text": "Un grupo",
@@ -804,7 +804,7 @@
           "waitTime": 6
         },
         {
-          "text": "Un Gato",
+          "text": "Un Pato",
           "targetQuestionId": 406,
           "waitTime": 4
         }
@@ -822,7 +822,7 @@
         {
           "text": "Sobornar",
           "targetQuestionId": 407,
-          "waitTime": 1
+          "waitTime": 2
         },
         {
           "text": "Testear??",
@@ -830,7 +830,7 @@
           "waitTime": 6
         },
         {
-          "text": "Entre nosotros",
+          "text": "Yo mismo",
           "targetQuestionId": 407,
           "waitTime": 4
         }
@@ -853,12 +853,12 @@
         {
           "text": "Texto",
           "targetQuestionId": 999,
-          "waitTime": 1
+          "waitTime": 2
         },
         {
           "text": "Sonido",
           "targetQuestionId": 999,
-          "waitTime": 3
+          "waitTime": 4
         }
       ]
     }

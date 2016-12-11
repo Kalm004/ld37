@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class GameHandler : MonoBehaviour {
+    private string IntroText = "Bienvenidos a EscapeJam. \nEstais encerrados en esta habitación hasta que termineis vuestro juego... si la habitación no termina primero con vosotros.";
+
     private Dictionary<int, QuestionModel> questions = new Dictionary<int, QuestionModel>();
     private ProblemModel[] problems;
     private QuestionModel currentQuestion;
@@ -11,6 +13,9 @@ public class GameHandler : MonoBehaviour {
     private float currentProgress = 0;
     private float timeToExclamation = 1f;
     private float problemProbability = 0.2f;
+    private int finaltQuestion = 999;
+    private float timeToLose = 60;
+    private float shakeDuration = 0.1f;
 
     public TextAsset textAsset;
     public Text questionText;
@@ -28,6 +33,16 @@ public class GameHandler : MonoBehaviour {
 
     public GameObject exclamation;
 
+    public Canvas winCanvas;
+
+    public Canvas loseCanvas;
+
+    public AudioSource discusionSound;
+
+    public AudioSource heartBeat;
+
+    public GameObject answerButtons;
+
     private GameObject[] currentBalloons;
 
     private float? timeToSelect = null;
@@ -40,8 +55,23 @@ public class GameHandler : MonoBehaviour {
 
     private float timeToHideExclamation = 0;
 
+    public bool finished = true;
+
+    private float TimeToHeartBeat = 0;
+
+    private float hideIntroTime;
+
+    private float shakeAmt = 0;
+
+    private float timeToStopShake = 0;
+
+    private Vector3 oldPosition;
+
     // Use this for initialization
     void Start () {
+        oldPosition = transform.position;
+        finished = true;
+        discusionSound = GetComponent<AudioSource>();
         GameData gameData = ObjectsFactory.getGameData(textAsset.text);
         problems = gameData.problems;
         int n = problems.Length;
@@ -56,73 +86,137 @@ public class GameHandler : MonoBehaviour {
         {
             questions.Add(question.id, question);
         }
-        currentQuestion = questions[0];
-        selectQuestion(currentQuestion);
+        hideIntroTime = Time.time + 5;
+        questionText.text = IntroText;
+        answerButtons.SetActive(false);
     }
 	
 	// Update is called once per frame
 	void Update () {
-        if (timeToHideExclamation > 0 && Time.time > timeToHideExclamation)
+        if (timeToStopShake > 0 && Time.time > timeToStopShake)
         {
-            exclamation.SetActive(false);
+            shakeAmt = 0;
+            timeToStopShake = 0;
+            transform.position = oldPosition;
         }
 
-		if (timeToSelect != null && Time.time >= timeToSelect)
+        CameraShake();
+        if (hideIntroTime > 0)
         {
-            canvas.gameObject.SetActive(true);
-            timeToSelect = null;
-            foreach(GameObject balloon in currentBalloons) {
-                balloon.SetActive(false);
+            if (Time.time > hideIntroTime)
+            {
+                hideIntroTime = 0;
+                currentQuestion = questions[0];
+                selectQuestion(currentQuestion);
+                answerButtons.SetActive(true);
+                finished = false;
             }
-            timeToChangeBalloon = 0;
+            return;
+        }
+        if (!finished)
+        {
+            if ((TimeToHeartBeat == 0 && Time.time > (timeToLose - 50)) || (TimeToHeartBeat > 0 && Time.time > TimeToHeartBeat))
+            {
+                heartBeat.Play();
+                oldPosition = transform.position;
+                shakeAmt = 0.1f;
+                timeToStopShake = Time.time + shakeDuration;
+                TimeToHeartBeat = Time.time + 1;
+            }
+            if (Time.time > timeToLose)
+            {
+                loseCanvas.gameObject.SetActive(true);
+                finished = true;
+            }
+            else
+            {
+                if (timeToHideExclamation > 0 && Time.time > timeToHideExclamation)
+                {
+                    exclamation.SetActive(false);
+                }
 
-            if (Random.Range(0, 1f) < problemProbability)
-            {
-                exclamation.SetActive(true);
-                timeToHideExclamation = Time.time + timeToExclamation;
-                AnswerModel[] problemAnswers = new AnswerModel[problems[currentProblem].answers.Length];
-                int i = 0;
-                foreach (AnswerProblemModel apm in problems[currentProblem].answers)
+                if (timeToSelect != null && Time.time >= timeToSelect)
                 {
-                    problemAnswers[i] = new AnswerModel(apm.text, nextQuestionId, apm.effect);
-                    i++;
-                }
-                currentQuestion = new QuestionModel(0, problems[currentProblem].text, problemAnswers);
-                selectQuestion(currentQuestion);
-                currentProblem++;
-                problemProbability = 0;
-            } else
-            {
-                currentQuestion = questions[nextQuestionId];
-                selectQuestion(currentQuestion);
-                if (problemProbability == 0)
-                {
-                    problemProbability = 0.2f;
-                } else
-                {
-                    problemProbability += 0.1f;
-                }
-            }
-        } else
-        {
-            if (timeToChangeBalloon > 0)
-            {
-                if (Time.time > timeToChangeBalloon)
-                {
-                    timeToChangeBalloon = Time.time + timeToBalloon;
-                    currentBalloons[currentBalloon].SetActive(false);
-                    if (currentBalloon == 0)
+                    canvas.gameObject.SetActive(true);
+                    timeToSelect = null;
+                    foreach (GameObject balloon in currentBalloons)
                     {
-                        currentBalloon = 1;
+                        balloon.SetActive(false);
+                    }
+                    timeToChangeBalloon = 0;
+
+                    if (nextQuestionId == finaltQuestion)
+                    {
+                        winCanvas.gameObject.SetActive(true);
+                        finished = true;
+                    }
+                    else if (Random.Range(0, 1f) < problemProbability)
+                    {
+                        exclamation.SetActive(true);
+                        timeToHideExclamation = Time.time + timeToExclamation;
+                        AnswerModel[] problemAnswers = new AnswerModel[problems[currentProblem].answers.Length];
+                        int i = 0;
+                        foreach (AnswerProblemModel apm in problems[currentProblem].answers)
+                        {
+                            problemAnswers[i] = new AnswerModel(apm.text, nextQuestionId, apm.effect);
+                            i++;
+                        }
+                        currentQuestion = new QuestionModel(0, problems[currentProblem].text, problemAnswers);
+                        selectQuestion(currentQuestion);
+                        currentProblem++;
+                        problemProbability = 0;
+                    }
+                    else
+                    {
+                        currentQuestion = questions[nextQuestionId];
+                        selectQuestion(currentQuestion);
+                        if (problemProbability == 0)
+                        {
+                            problemProbability = 0.2f;
+                        }
+                        else
+                        {
+                            problemProbability += 0.1f;
+                        }
+                    }
+                }
+                else
+                {
+                    if (timeToChangeBalloon > 0)
+                    {
+                        if (Time.time > timeToChangeBalloon)
+                        {
+                            timeToChangeBalloon = Time.time + timeToBalloon;
+                            currentBalloons[currentBalloon].SetActive(false);
+                            if (currentBalloon == 0)
+                            {
+                                currentBalloon = 1;
+                            }
+                            else
+                            {
+                                currentBalloon = 0;
+                            }
+                            currentBalloons[currentBalloon].SetActive(true);
+                        }
                     } else
                     {
-                        currentBalloon = 0;
+                        discusionSound.Stop();
                     }
-                    currentBalloons[currentBalloon].SetActive(true);
                 }
+                image.fillAmount = currentProgress;
             }
         }
-        image.fillAmount = currentProgress;
+    }
+
+    void CameraShake()
+    {
+        if (shakeAmt > 0)
+        {
+            float quakeAmt = Random.value * shakeAmt * 2 - shakeAmt;
+            Vector3 pp = transform.position;
+            pp.y += quakeAmt; // can also add to x and/or z
+            transform.position = pp;
+        }
     }
 
     private void selectQuestion(QuestionModel question)
@@ -146,16 +240,20 @@ public class GameHandler : MonoBehaviour {
     {
         AnswerModel answer = currentQuestion.answers[answerNumber - 1];
         nextQuestionId = answer.targetQuestionId;
-        timeToSelect = Time.time + answer.waitTime;
+        timeToSelect = Time.time + (answer.waitTime <= 4 ? answer.waitTime : 4);
         if (answer.waitTime > 2)
         {
             currentBalloons = badBallons;
+            discusionSound.Play();
         } else
         {
             currentBalloons = goodBallons;
         }
         waitingForProcess();
-        currentProgress += 0.1f;
+        if (problemProbability >= 0)
+        {
+            currentProgress += 0.1f;
+        }
     }
 
     private void waitingForProcess()
