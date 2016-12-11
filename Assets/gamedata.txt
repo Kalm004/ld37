@@ -1,5 +1,5 @@
 {
-  "questions": [
+"questions": [
     {
       "id": 0,
       "text": "¿Qué quieres hacer?",
@@ -215,22 +215,22 @@
       "answers": [
         {
           "text": "Gráficos",
-          "targetQuestionId": 999,
+          "targetQuestionId": 995,
           "waitTime": 2
         },
         {
           "text": "Está perfecto",
-          "targetQuestionId": 999,
+          "targetQuestionId": 995,
           "waitTime": 6
         },
         {
           "text": "Texto",
-          "targetQuestionId": 999,
+          "targetQuestionId": 995,
           "waitTime": 4
         },
         {
           "text": "Sonido",
-          "targetQuestionId": 999,
+          "targetQuestionId": 995,
           "waitTime": 2
         }
       ]
@@ -424,22 +424,22 @@
       "answers": [
         {
           "text": "Gráficos",
-          "targetQuestionId": 999,
+          "targetQuestionId": 996,
           "waitTime": 2
         },
         {
           "text": "Está perfecto",
-          "targetQuestionId": 999,
+          "targetQuestionId": 996,
           "waitTime": 6
         },
         {
           "text": "Texto",
-          "targetQuestionId": 999,
+          "targetQuestionId": 996,
           "waitTime": 4
         },
         {
           "text": "Sonido",
-          "targetQuestionId": 999,
+          "targetQuestionId": 996,
           "waitTime": 3
         }
       ]
@@ -633,22 +633,22 @@
       "answers": [
         {
           "text": "Gráficos",
-          "targetQuestionId": 999,
+          "targetQuestionId": 997,
           "waitTime": 2
         },
         {
           "text": "Está perfecto",
-          "targetQuestionId": 999,
+          "targetQuestionId": 997,
           "waitTime": 6
         },
         {
           "text": "Texto",
-          "targetQuestionId": 999,
+          "targetQuestionId": 997,
           "waitTime": 2
         },
         {
           "text": "Sonido",
-          "targetQuestionId": 999,
+          "targetQuestionId": 997,
           "waitTime": 4
         }
       ]
@@ -718,17 +718,17 @@
         {
           "text": "GameMaker",
           "targetQuestionId": 403,
-          "waitTime": 2
+          "waitTime": 3
         },
         {
           "text": "Unity",
           "targetQuestionId": 403,
-          "waitTime": 3
+          "waitTime": 2
         },
         {
           "text": "Unreal",
           "targetQuestionId": 403,
-          "waitTime": 2
+          "waitTime": 3
         }
       ]
     },
@@ -842,22 +842,22 @@
       "answers": [
         {
           "text": "Gráficos",
-          "targetQuestionId": 999,
+          "targetQuestionId": 998,
           "waitTime": 4
         },
         {
           "text": "Está perfecto",
-          "targetQuestionId": 999,
+          "targetQuestionId": 998,
           "waitTime": 6
         },
         {
           "text": "Texto",
-          "targetQuestionId": 999,
+          "targetQuestionId": 998,
           "waitTime": 2
         },
         {
           "text": "Sonido",
-          "targetQuestionId": 999,
+          "targetQuestionId": 998,
           "waitTime": 4
         }
       ]
