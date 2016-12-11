@@ -8,7 +8,7 @@ public class GameHandler : MonoBehaviour {
     public static Difficulty difficulty = Difficulty.normal;
     public static bool finishing = false;
 
-    private string IntroText = "Bienvenidos a EscapeJam. \nEstais encerrados en esta habitación hasta que termineis vuestro juego... si la habitación no termina primero con vosotros.";
+    private string IntroText = "Bienvenidos a EscapeJam. \nEstáis encerrados en esta habitación hasta que terminéis vuestro juego... si la habitación no termina primero con vosotros.";
 
     private const float timeShowFinishScreen = 5;
 
