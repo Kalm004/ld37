@@ -271,7 +271,9 @@ public class GameHandler : MonoBehaviour {
                     {
                         discusionSound.Stop();
 						typingSound.Stop ();
-						player1Happy.SetActive (true);
+                        player1Happy.GetComponent<Animator>().SetBool("happy", false);
+                        player2Happy.GetComponent<Animator>().SetBool("happy", false);
+                        player1Happy.SetActive (true);
 						player1Angry.SetActive (false);
 						player2Happy.SetActive (true);
 						player2Angry.SetActive (false);
@@ -337,6 +339,8 @@ public class GameHandler : MonoBehaviour {
         {
             currentBalloons = goodBallons;
 			typingSound.Play();
+            player1Happy.GetComponent<Animator>().SetBool("happy", true);
+            player2Happy.GetComponent<Animator>().SetBool("happy", true);
         }
         waitingForProcess();
         if (problemProbability > 0)
