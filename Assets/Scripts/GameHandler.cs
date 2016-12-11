@@ -21,7 +21,7 @@ public class GameHandler : MonoBehaviour {
     private float currentProgress = 0;
     private float timeToExclamation = 1f;
     private float problemProbability = 0.2f;
-    private float timeToLose = 120;
+    private float timeToLose = 125;
     private float shakeDuration = 0.1f;
 
     public TextAsset textAsset;
@@ -90,8 +90,11 @@ public class GameHandler : MonoBehaviour {
 
     private float timeToHideFinishScreen = 0;
 
+    private float initialTime = 0;
+
     // Use this for initialization
     void Start () {
+        initialTime = Time.time;
         oldPosition = transform.position;
         finished = true;
         discusionSound = GetComponent<AudioSource>();
@@ -109,7 +112,7 @@ public class GameHandler : MonoBehaviour {
         {
             questions.Add(question.id, question);
         }
-        hideIntroTime = Time.time + 5;
+        hideIntroTime = Time.time + 10;
         questionText.text = IntroText;
         answerButtons.SetActive(false);
     }
@@ -138,7 +141,7 @@ public class GameHandler : MonoBehaviour {
         }
         if (!finished)
         {
-            if ((TimeToHeartBeat == 0 && Time.time > (timeToLose - 20)) || (TimeToHeartBeat > 0 && Time.time > TimeToHeartBeat))
+            if ((TimeToHeartBeat == 0 && (Time.time - initialTime) > (timeToLose - 20)) || (TimeToHeartBeat > 0 && Time.time > TimeToHeartBeat))
             {
                 heartBeat.Play();
                 oldPosition = transform.position;
@@ -146,7 +149,7 @@ public class GameHandler : MonoBehaviour {
                 timeToStopShake = Time.time + shakeDuration;
                 TimeToHeartBeat = Time.time + 1;
             }
-            if (Time.time > timeToLose)
+            if ((Time.time - initialTime) > timeToLose)
             {
                 canvas.gameObject.SetActive(false);
                 loseCanvas.gameObject.SetActive(true);
@@ -174,6 +177,7 @@ public class GameHandler : MonoBehaviour {
                     {
                         canvas.gameObject.SetActive(false);
                         winCanvas.gameObject.SetActive(true);
+                        currentProgress = 1;
                         switch (nextQuestionId)
                         {
                             case plataformaFinalId:
@@ -253,7 +257,6 @@ public class GameHandler : MonoBehaviour {
 						player2Angry.SetActive (false);
                     }
                 }
-                image.fillAmount = currentProgress;
             }
         } else
         {
@@ -262,6 +265,7 @@ public class GameHandler : MonoBehaviour {
                 SceneManager.LoadScene("MainMenuScene");
             }
         }
+        image.fillAmount = currentProgress;
     }
 
     void CameraShake()
@@ -311,7 +315,7 @@ public class GameHandler : MonoBehaviour {
 			typingSound.Play();
         }
         waitingForProcess();
-        if (problemProbability >= 0)
+        if (problemProbability > 0)
         {
             currentProgress += 0.1f;
         }

@@ -1,5 +1,5 @@
 {
-"questions": [
+  "questions": [
     {
       "id": 0,
       "text": "¿Qué quieres hacer?",
@@ -159,7 +159,7 @@
     },
 	{
       "id": 105,
-      "text": "¿Quién resuelve el juego?",
+      "text": "¿Quién será el protagonista del juego?",
       "answers": [
         {
           "text": "Mary Poppins",
@@ -368,7 +368,7 @@
     },
 	{
       "id": 205,
-      "text": "¿Quién resuelve el juego?",
+      "text": "¿Quién será el protagonista del juego?",
       "answers": [
         {
           "text": "Predator",
@@ -577,7 +577,7 @@
     },
 	{
       "id": 305,
-      "text": "¿Quién resuelve el juego?",
+      "text": "¿Quién será el protagonista del juego?",
       "answers": [
         {
           "text": "Godzilla",
@@ -786,7 +786,7 @@
     },
 	{
       "id": 405,
-      "text": "¿Quién resuelve el juego?",
+      "text": "¿Quién será el protagonista del juego?",
       "answers": [
         {
           "text": "Un detective",
