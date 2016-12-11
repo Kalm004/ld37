@@ -14,7 +14,7 @@ public class GameHandler : MonoBehaviour {
     private float timeToExclamation = 1f;
     private float problemProbability = 0.2f;
     private int finaltQuestion = 999;
-    private float timeToLose = 60;
+    private float timeToLose = 120;
     private float shakeDuration = 0.1f;
 
     public TextAsset textAsset;
@@ -42,6 +42,13 @@ public class GameHandler : MonoBehaviour {
     public AudioSource heartBeat;
 
     public GameObject answerButtons;
+
+	public AudioSource typingSound;
+
+	public GameObject player1Happy;
+	public GameObject player1Angry;
+	public GameObject player2Happy;
+	public GameObject player2Angry;
 
     private GameObject[] currentBalloons;
 
@@ -115,7 +122,7 @@ public class GameHandler : MonoBehaviour {
         }
         if (!finished)
         {
-            if ((TimeToHeartBeat == 0 && Time.time > (timeToLose - 50)) || (TimeToHeartBeat > 0 && Time.time > TimeToHeartBeat))
+            if ((TimeToHeartBeat == 0 && Time.time > (timeToLose - 20)) || (TimeToHeartBeat > 0 && Time.time > TimeToHeartBeat))
             {
                 heartBeat.Play();
                 oldPosition = transform.position;
@@ -201,6 +208,11 @@ public class GameHandler : MonoBehaviour {
                     } else
                     {
                         discusionSound.Stop();
+						typingSound.Stop ();
+						player1Happy.SetActive (true);
+						player1Angry.SetActive (false);
+						player2Happy.SetActive (true);
+						player2Angry.SetActive (false);
                     }
                 }
                 image.fillAmount = currentProgress;
@@ -245,9 +257,14 @@ public class GameHandler : MonoBehaviour {
         {
             currentBalloons = badBallons;
             discusionSound.Play();
+			player1Happy.SetActive (false);
+			player1Angry.SetActive (true);
+			player2Happy.SetActive (false);
+			player2Angry.SetActive (true);
         } else
         {
             currentBalloons = goodBallons;
+			typingSound.Play();
         }
         waitingForProcess();
         if (problemProbability >= 0)

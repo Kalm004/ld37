@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class QuestionsController : MonoBehaviour {
     public GameHandler gameHandler;
+	public AudioSource clickSound;
 
 	// Use this for initialization
 	void Start () {
@@ -18,20 +19,24 @@ public class QuestionsController : MonoBehaviour {
     public void onAnswer1Click()
     {
         gameHandler.answerSelected(1);
+		clickSound.Play ();
     }
 
     public void onAnswer2Click()
     {
         gameHandler.answerSelected(2);
+		clickSound.Play ();
     }
 
     public void onAnswer3Click()
     {
         gameHandler.answerSelected(3);
+		clickSound.Play ();
     }
 
     public void onAnswer4Click()
     {
         gameHandler.answerSelected(4);
+		clickSound.Play ();
     }
 }
