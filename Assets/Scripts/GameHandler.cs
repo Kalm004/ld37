@@ -64,6 +64,8 @@ public class GameHandler : MonoBehaviour {
 
     private GameObject[] currentBalloons;
 
+    public AudioSource exclamationSound;
+
     private float? timeToSelect = null;
     private float timeToChangeBalloon = 0;
     private int currentBalloon = 0;
@@ -195,6 +197,7 @@ public class GameHandler : MonoBehaviour {
                     else if (Random.Range(0, 1f) < problemProbability)
                     {
                         exclamation.SetActive(true);
+                        exclamationSound.Play();
                         timeToHideExclamation = Time.time + timeToExclamation;
                         AnswerModel[] problemAnswers = new AnswerModel[problems[currentProblem].answers.Length];
                         int i = 0;
