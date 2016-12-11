@@ -5,9 +5,15 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameHandler : MonoBehaviour {
+    public static Difficulty difficulty = Difficulty.normal;
+    public static bool finishing = false;
+
     private string IntroText = "Bienvenidos a EscapeJam. \nEstais encerrados en esta habitación hasta que termineis vuestro juego... si la habitación no termina primero con vosotros.";
 
     private const float timeShowFinishScreen = 5;
+
+    private const float timeToLoseNormal = 120;
+    private const float timeToLoseHard = 60;
 
     private const int plataformaFinalId = 995;
     private const int fpsFinalId = 996;
@@ -94,7 +100,18 @@ public class GameHandler : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        initialTime = Time.time;
+        finishing = false;
+        switch (difficulty)
+        {
+            case Difficulty.normal:
+                timeToLose = timeToLoseNormal;
+                break;
+            case Difficulty.hard:
+                timeToLose = timeToLoseHard;
+                break;
+            default:
+                break;
+        }
         oldPosition = transform.position;
         finished = true;
         discusionSound = GetComponent<AudioSource>();
@@ -119,6 +136,7 @@ public class GameHandler : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
         if (timeToStopShake > 0 && Time.time > timeToStopShake)
         {
             shakeAmt = 0;
@@ -129,8 +147,9 @@ public class GameHandler : MonoBehaviour {
         CameraShake();
         if (hideIntroTime > 0)
         {
-            if (Time.time > hideIntroTime)
+            if (Input.GetMouseButtonDown(0) || Time.time > hideIntroTime)
             {
+                initialTime = Time.time;
                 hideIntroTime = 0;
                 currentQuestion = questions[0];
                 selectQuestion(currentQuestion);
@@ -143,6 +162,7 @@ public class GameHandler : MonoBehaviour {
         {
             if ((TimeToHeartBeat == 0 && (Time.time - initialTime) > (timeToLose - 20)) || (TimeToHeartBeat > 0 && Time.time > TimeToHeartBeat))
             {
+                finishing = true;
                 heartBeat.Play();
                 oldPosition = transform.position;
                 shakeAmt = 0.1f;
@@ -266,6 +286,10 @@ public class GameHandler : MonoBehaviour {
             }
         }
         image.fillAmount = currentProgress;
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("MainMenuScene");
+        }
     }
 
     void CameraShake()

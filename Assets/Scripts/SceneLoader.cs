@@ -4,10 +4,11 @@ using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class SceneLoader : MonoBehaviour {
+    public GameObject panel;
 
 	public void loadGameScene()
 	{
-		SceneManager.LoadScene ("Scene1");
+        panel.SetActive(true);
 	}
 	public void loadCreditScene()
 	{
@@ -21,4 +22,16 @@ public class SceneLoader : MonoBehaviour {
 	{
 		SceneManager.LoadScene ("MainMenuScene");
 	}
+
+    public void normal()
+    {
+        GameHandler.difficulty = Difficulty.normal;
+        SceneManager.LoadScene("Scene1");
+    }
+
+    public void dificil()
+    {
+        GameHandler.difficulty = Difficulty.hard;
+        SceneManager.LoadScene("Scene1");
+    }
 }
