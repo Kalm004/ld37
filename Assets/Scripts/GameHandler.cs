@@ -10,7 +10,7 @@ public class GameHandler : MonoBehaviour {
 
     private string IntroText = "Bienvenidos a EscapeJam. \nEstáis encerrados en esta habitación hasta que terminéis vuestro juego... si la habitación no termina primero con vosotros.";
 
-    private const float timeShowFinishScreen = 5;
+    private const float timeShowFinishScreen = 20;
 
     private const float timeToLoseNormal = 120;
     private const float timeToLoseHard = 60;
@@ -47,6 +47,7 @@ public class GameHandler : MonoBehaviour {
     public GameObject exclamation;
 
     public Canvas winCanvas;
+    public Canvas winBadCanvas;
 
     public Canvas loseCanvas;
 
@@ -67,6 +68,11 @@ public class GameHandler : MonoBehaviour {
     public GameObject imagenFinalFPS;
     public GameObject imagenFinalMMO;
     public GameObject imagenFinalPlataforma;
+
+    public GameObject imagenFinalMaloAventura;
+    public GameObject imagenFinalMaloFPS;
+    public GameObject imagenFinalMaloMMO;
+    public GameObject imagenFinalMaloPlataforma;
 
     private GameObject[] currentBalloons;
 
@@ -97,6 +103,10 @@ public class GameHandler : MonoBehaviour {
     private float timeToHideFinishScreen = 0;
 
     private float initialTime = 0;
+
+    private int totalQuestions = 0;
+
+    private int totalFailedQuestions = 0;
 
     // Use this for initialization
     void Start () {
@@ -129,7 +139,7 @@ public class GameHandler : MonoBehaviour {
         {
             questions.Add(question.id, question);
         }
-        hideIntroTime = Time.time + 10;
+        hideIntroTime = Time.time + 15;
         questionText.text = IntroText;
         answerButtons.SetActive(false);
     }
@@ -196,24 +206,49 @@ public class GameHandler : MonoBehaviour {
                     if (nextQuestionId >= plataformaFinalId)
                     {
                         canvas.gameObject.SetActive(false);
-                        winCanvas.gameObject.SetActive(true);
                         currentProgress = 1;
-                        switch (nextQuestionId)
+                        float finalValue = (float)totalFailedQuestions / (float)totalQuestions;
+                        if (finalValue > 0.6f)
                         {
-                            case plataformaFinalId:
-                                imagenFinalPlataforma.SetActive(true);
-                                break;
-                            case aventuraGraficaFinalId:
-                                imagenFinalAventura.SetActive(true);
-                                break;
-                            case fpsFinalId:
-                                imagenFinalFPS.SetActive(true);
-                                break;
-                            case mmoFinalId:
-                                imagenFinalMMO.SetActive(true);
-                                break;
-                            default:
-                                break;
+                            winBadCanvas.gameObject.SetActive(true);
+                            switch (nextQuestionId)
+                            {
+                                case plataformaFinalId:
+                                    imagenFinalMaloPlataforma.SetActive(true);
+                                    break;
+                                case aventuraGraficaFinalId:
+                                    imagenFinalMaloAventura.SetActive(true);
+                                    break;
+                                case fpsFinalId:
+                                    imagenFinalMaloFPS.SetActive(true);
+                                    break;
+                                case mmoFinalId:
+                                    imagenFinalMaloMMO.SetActive(true);
+                                    break;
+                                default:
+                                    break;
+                            }
+                        }
+                        else
+                        {
+                            winCanvas.gameObject.SetActive(true);
+                            switch (nextQuestionId)
+                            {
+                                case plataformaFinalId:
+                                    imagenFinalPlataforma.SetActive(true);
+                                    break;
+                                case aventuraGraficaFinalId:
+                                    imagenFinalAventura.SetActive(true);
+                                    break;
+                                case fpsFinalId:
+                                    imagenFinalFPS.SetActive(true);
+                                    break;
+                                case mmoFinalId:
+                                    imagenFinalMMO.SetActive(true);
+                                    break;
+                                default:
+                                    break;
+                            }
                         }
                         timeToHideFinishScreen = Time.time + timeShowFinishScreen;
                         finished = true;
@@ -282,7 +317,7 @@ public class GameHandler : MonoBehaviour {
             }
         } else
         {
-            if (Time.time > timeToHideFinishScreen)
+            if (Time.time > timeToHideFinishScreen || Input.GetMouseButtonDown(0))
             {
                 SceneManager.LoadScene("MainMenuScene");
             }
@@ -307,6 +342,7 @@ public class GameHandler : MonoBehaviour {
 
     private void selectQuestion(QuestionModel question)
     {
+        totalQuestions++;
         questionText.text = question.text;
         int n = question.answers.Length;
         while (n > 1)
@@ -329,6 +365,7 @@ public class GameHandler : MonoBehaviour {
         timeToSelect = Time.time + (answer.waitTime <= 4 ? answer.waitTime : 4);
         if (answer.waitTime > 2)
         {
+            totalFailedQuestions++;
             currentBalloons = badBallons;
             discusionSound.Play();
 			player1Happy.SetActive (false);

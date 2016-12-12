@@ -1090,19 +1090,19 @@
   "answers": [
 	{
 	  "text": "¡AAAAAAAHHHH!",
-	  "effect": 5
+	  "effect": 4
 	},
 	{
 	  "text": "#@*!!",
-	  "effect": 5
+	  "effect": 3
 	},
 	{
 	  "text": "¡Sálvese quien pueda!",
-	  "effect": 5
+	  "effect": 3
 	},
 	{
 	  "text": "Soy Batman",
-	  "effect": 5
+	  "effect": 1
 	}
   ]
 },
