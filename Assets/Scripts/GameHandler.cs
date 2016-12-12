@@ -5,6 +5,8 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameHandler : MonoBehaviour {
+    public static Languages language = Languages.SPANISH;
+    public static TextInterface texts = new SpanishTexts();
     public static Difficulty difficulty = Difficulty.normal;
     public static bool finishing = false;
 
@@ -205,6 +207,8 @@ public class GameHandler : MonoBehaviour {
 
                     if (nextQuestionId >= plataformaFinalId)
                     {
+                        discusionSound.Stop();
+                        typingSound.Stop();
                         canvas.gameObject.SetActive(false);
                         currentProgress = 1;
                         float finalValue = (float)totalFailedQuestions / (float)totalQuestions;

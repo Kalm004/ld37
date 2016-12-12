@@ -1,0 +1,1154 @@
+﻿{
+  "questions": [
+    {
+      "id": 0,
+      "text": "What do you do?",
+      "answers": [
+        {
+          "text": "Platform",
+          "targetQuestionId": 100,
+          "waitTime": 2
+        },
+        {
+          "text": "FPS",
+          "targetQuestionId": 200,
+          "waitTime": 4
+        },
+        {
+          "text": "MMO",
+          "targetQuestionId": 300,
+          "waitTime": 5
+        },
+        {
+          "text": "Graphic Adventure",
+          "targetQuestionId": 400,
+          "waitTime": 2
+        }
+      ]
+    },
+        {
+      "id": 100,
+      "text": "What are your references?",
+      "answers": [
+        {
+          "text": "Films",
+          "targetQuestionId": 101,
+          "waitTime": 5
+        },
+        {
+          "text": "Books",
+          "targetQuestionId": 101,
+          "waitTime": 6
+        },
+        {
+          "text": "Games",
+          "targetQuestionId": 101,
+          "waitTime": 2
+        },
+        {
+          "text": "Youtube",
+          "targetQuestionId": 101,
+          "waitTime": 3
+        }
+      ]
+    },
+    
+   {
+      "id": 101,
+      "text": "What graphics to use?",
+      "answers": [
+        {
+          "text": "Top Down",
+          "targetQuestionId": 102,
+          "waitTime": 6
+        },
+        {
+          "text": "3D",
+          "targetQuestionId": 102,
+          "waitTime": 4
+        },
+        {
+          "text": "Lateral Scroll",
+          "targetQuestionId": 102,
+          "waitTime": 2
+        },
+        {
+          "text": "Isometric",
+          "targetQuestionId": 102,
+          "waitTime": 2
+        }
+      ]
+    },
+   {
+      "id": 102,
+      "text": "What motor do you use?",
+      "answers": [
+        {
+          "text": "Own motor",
+          "targetQuestionId": 103,
+          "waitTime": 6
+        },
+        {
+          "text": "GameMaker",
+          "targetQuestionId": 103,
+          "waitTime": 2
+        },
+        {
+          "text": "Unity",
+          "targetQuestionId": 103,
+          "waitTime": 3
+        },
+        {
+          "text": "Unreal",
+          "targetQuestionId": 103,
+          "waitTime": 2
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "text": "What do you need for a prototype?",
+      "answers": [
+        {
+          "text": "Dialogues",
+          "targetQuestionId": 104,
+          "waitTime": 6
+        },
+        {
+          "text": "Sound",
+          "targetQuestionId": 104,
+          "waitTime": 2
+        },
+        {
+          "text": "Mechanics",
+          "targetQuestionId": 104,
+          "waitTime": 2
+        },
+        {
+          "text": "Characters",
+          "targetQuestionId": 104,
+          "waitTime": 4
+        }
+      ]
+    },
+     {
+      "id": 104,
+      "text": "You have to design the elements. Choose!",
+      "answers": [
+        {
+          "text": "Interiors",
+          "targetQuestionId": 105,
+          "waitTime": 2
+        },
+        {
+          "text": "Scenarios",
+          "targetQuestionId": 105,
+          "waitTime": 2
+        },
+        {
+          "text": "Lighting",
+          "targetQuestionId": 105,
+          "waitTime": 4
+        },
+        {
+          "text": "Animals",
+          "targetQuestionId": 105,
+          "waitTime": 6
+        }
+      ]
+    },
+	{
+      "id": 105,
+      "text": "Who will be the protagonist of the game?",
+      "answers": [
+        {
+          "text": "Mary Poppins",
+          "targetQuestionId": 106,
+          "waitTime": 2
+        },
+        {
+          "text": "A Team",
+          "targetQuestionId": 106,
+          "waitTime": 6
+        },
+        {
+          "text": "A Superheroe",
+          "targetQuestionId": 106,
+          "waitTime": 4
+        },
+        {
+          "text": "A Cat",
+          "targetQuestionId": 106,
+          "waitTime": 2
+        }
+      ]
+    },
+	{
+      "id": 106,
+      "text": "How do you test the game?",
+      "answers": [
+        {
+          "text": "Ask for help",
+          "targetQuestionId": 107,
+          "waitTime": 2
+        },
+        {
+          "text": "To bribe",
+          "targetQuestionId": 107,
+          "waitTime": 2
+        },
+        {
+          "text": "To test??",
+          "targetQuestionId": 107,
+          "waitTime": 6
+        },
+        {
+          "text": "Myself",
+          "targetQuestionId": 107,
+          "waitTime": 4
+        }
+      ]
+    },
+	{
+      "id": 107,
+      "text": "Final touches ...",
+      "answers": [
+        {
+          "text": "Graphics",
+          "targetQuestionId": 995,
+          "waitTime": 2
+        },
+        {
+          "text": "It's OK!",
+          "targetQuestionId": 995,
+          "waitTime": 6
+        },
+        {
+          "text": "Texts",
+          "targetQuestionId": 995,
+          "waitTime": 4
+        },
+        {
+          "text": "Sound",
+          "targetQuestionId": 995,
+          "waitTime": 2
+        }
+      ]
+    },
+	{
+      "id": 200,
+      "text": "What are your references?",
+      "answers": [
+        {
+          "text": "Films",
+          "targetQuestionId": 201,
+          "waitTime": 2
+        },
+        {
+          "text": "Books",
+          "targetQuestionId": 201,
+          "waitTime": 6
+        },
+        {
+          "text": "Games",
+          "targetQuestionId": 201,
+          "waitTime": 2
+        },
+        {
+          "text": "Disney",
+          "targetQuestionId": 201,
+          "waitTime": 4
+        }
+      ]
+    },
+    
+   {
+      "id": 201,
+      "text": "What graphics to use?",
+      "answers": [
+        {
+          "text": "Top Down",
+          "targetQuestionId": 202,
+          "waitTime": 6
+        },
+        {
+          "text": "3D",
+          "targetQuestionId": 202,
+          "waitTime": 2
+        },
+        {
+          "text": "Lateral Scroll",
+          "targetQuestionId": 202,
+          "waitTime": 3
+        },
+        {
+          "text": "Isometric",
+          "targetQuestionId": 202,
+          "waitTime": 4
+        }
+      ]
+    },
+   {
+      "id": 202,
+      "text": "What motor do you use?",
+      "answers": [
+        {
+          "text": "Own motor",
+          "targetQuestionId": 203,
+          "waitTime": 6
+        },
+        {
+          "text": "GameMaker",
+          "targetQuestionId": 203,
+          "waitTime": 2
+        },
+        {
+          "text": "Unity",
+          "targetQuestionId": 203,
+          "waitTime": 3
+        },
+        {
+          "text": "Unreal",
+          "targetQuestionId": 203,
+          "waitTime": 2
+        }
+      ]
+    },
+    {
+      "id": 203,
+      "text": "What do you need for a prototype?",
+      "answers": [
+        {
+          "text": "Dialogues",
+          "targetQuestionId": 204,
+          "waitTime": 6
+        },
+        {
+          "text": "Sound",
+          "targetQuestionId": 204,
+          "waitTime": 2
+        },
+        {
+          "text": "Mechanics",
+          "targetQuestionId": 204,
+          "waitTime": 2
+        },
+        {
+          "text": "Characters",
+          "targetQuestionId": 204,
+          "waitTime": 4
+        }
+      ]
+    },
+     {
+      "id": 204,
+      "text": "You have to design the elements. Choose!",
+      "answers": [
+        {
+          "text": "Interiors",
+          "targetQuestionId": 205,
+          "waitTime": 4
+        },
+        {
+          "text": "Scenarios",
+          "targetQuestionId": 205,
+          "waitTime": 2
+        },
+        {
+          "text": "Lighting",
+          "targetQuestionId": 205,
+          "waitTime": 4
+        },
+        {
+          "text": "Weapons",
+          "targetQuestionId": 205,
+          "waitTime": 2
+        }
+      ]
+    },
+	{
+      "id": 205,
+      "text": "Who will be the protagonist of the game?",
+      "answers": [
+        {
+          "text": "Predator",
+          "targetQuestionId": 206,
+          "waitTime": 2
+        },
+        {
+          "text": "A party",
+          "targetQuestionId": 206,
+          "waitTime": 4
+        },
+        {
+          "text": "A Superhero",
+          "targetQuestionId": 206,
+          "waitTime": 2
+        },
+        {
+          "text": "A cat",
+          "targetQuestionId": 206,
+          "waitTime": 6
+        }
+      ]
+    },
+	{
+      "id": 206,
+      "text": "How do you test the game?",
+      "answers": [
+        {
+          "text": "Ask for help",
+          "targetQuestionId": 207,
+          "waitTime": 2
+        },
+        {
+          "text": "To bribe",
+          "targetQuestionId": 207,
+          "waitTime": 2
+        },
+        {
+          "text": "Test??",
+          "targetQuestionId": 207,
+          "waitTime": 6
+        },
+        {
+          "text": "Myself",
+          "targetQuestionId": 207,
+          "waitTime": 4
+        }
+      ]
+    },
+	{
+      "id": 207,
+      "text": "Final works...",
+      "answers": [
+        {
+          "text": "Graphics",
+          "targetQuestionId": 996,
+          "waitTime": 2
+        },
+        {
+          "text": "It's OK!",
+          "targetQuestionId": 996,
+          "waitTime": 6
+        },
+        {
+          "text": "Texts",
+          "targetQuestionId": 996,
+          "waitTime": 4
+        },
+        {
+          "text": "Sound",
+          "targetQuestionId": 996,
+          "waitTime": 3
+        }
+      ]
+    },
+	{
+      "id": 300,
+      "text": "What are your references?",
+      "answers": [
+        {
+          "text": "Films",
+          "targetQuestionId": 301,
+          "waitTime": 2
+        },
+        {
+          "text": "Books",
+          "targetQuestionId": 301,
+          "waitTime": 4
+        },
+        {
+          "text": "Games",
+          "targetQuestionId": 301,
+          "waitTime": 2
+        },
+        {
+          "text": "Newspapers",
+          "targetQuestionId": 301,
+          "waitTime": 6
+        }
+      ]
+    },
+    
+   {
+      "id": 301,
+      "text": "What graphics to use?",
+      "answers": [
+        {
+          "text": "Top Down",
+          "targetQuestionId": 302,
+          "waitTime": 4
+        },
+        {
+          "text": "3D",
+          "targetQuestionId": 302,
+          "waitTime": 6
+        },
+        {
+          "text": "Lateral Scroll",
+          "targetQuestionId": 302,
+          "waitTime": 3
+        },
+        {
+          "text": "Isometric",
+          "targetQuestionId": 302,
+          "waitTime": 2
+        }
+      ]
+    },
+   {
+      "id": 302,
+      "text": "What motor do you use?",
+      "answers": [
+        {
+          "text": "Own Motor",
+          "targetQuestionId": 303,
+          "waitTime": 6
+        },
+        {
+          "text": "GameMaker",
+          "targetQuestionId": 303,
+          "waitTime": 2
+        },
+        {
+          "text": "Unity",
+          "targetQuestionId": 303,
+          "waitTime": 3
+        },
+        {
+          "text": "Unreal",
+          "targetQuestionId": 303,
+          "waitTime": 2
+        }
+      ]
+    },
+    {
+      "id": 303,
+      "text": "What do you need for a prototype?",
+      "answers": [
+        {
+          "text": "Dialogues",
+          "targetQuestionId": 304,
+          "waitTime": 4
+        },
+        {
+          "text": "Sound",
+          "targetQuestionId": 304,
+          "waitTime": 3
+        },
+        {
+          "text": "Mechanics",
+          "targetQuestionId": 304,
+          "waitTime": 2
+        },
+        {
+          "text": "Characters",
+          "targetQuestionId": 304,
+          "waitTime": 2
+        }
+      ]
+    },
+     {
+      "id": 304,
+      "text": "You have to design the elements. Choose!",
+      "answers": [
+        {
+          "text": "Interiors",
+          "targetQuestionId": 305,
+          "waitTime": 4
+        },
+        {
+          "text": "Scenarios",
+          "targetQuestionId": 305,
+          "waitTime": 2
+        },
+        {
+          "text": "Lighting",
+          "targetQuestionId": 305,
+          "waitTime": 2
+        },
+        {
+          "text": "Animals",
+          "targetQuestionId": 305,
+          "waitTime": 6
+        }
+      ]
+    },
+	{
+      "id": 305,
+      "text": "Who will be the protagonist of the game?",
+      "answers": [
+        {
+          "text": "Godzilla",
+          "targetQuestionId": 306,
+          "waitTime": 4
+        },
+        {
+          "text": "A Party",
+          "targetQuestionId": 306,
+          "waitTime": 4
+        },
+        {
+          "text": "A Superhero",
+          "targetQuestionId": 306,
+          "waitTime": 2
+        },
+        {
+          "text": "A Goat?",
+          "targetQuestionId": 306,
+          "waitTime": 6
+        }
+      ]
+    },
+	{
+      "id": 306,
+      "text": "How do you test the game?",
+      "answers": [
+        {
+          "text": "Ask for help",
+          "targetQuestionId": 307,
+          "waitTime": 2
+        },
+        {
+          "text": "To bribe",
+          "targetQuestionId": 307,
+          "waitTime": 2
+        },
+        {
+          "text": "Test??",
+          "targetQuestionId": 307,
+          "waitTime": 6
+        },
+        {
+          "text": "Myself",
+          "targetQuestionId": 307,
+          "waitTime": 4
+        }
+      ]
+    },
+	{
+      "id": 307,
+      "text": "Final works...",
+      "answers": [
+        {
+          "text": "Graphics",
+          "targetQuestionId": 997,
+          "waitTime": 2
+        },
+        {
+          "text": "PERFECT!",
+          "targetQuestionId": 997,
+          "waitTime": 6
+        },
+        {
+          "text": "Texts",
+          "targetQuestionId": 997,
+          "waitTime": 2
+        },
+        {
+          "text": "Sound",
+          "targetQuestionId": 997,
+          "waitTime": 4
+        }
+      ]
+    },
+	{
+      "id": 400,
+      "text": "What are your references?",
+      "answers": [
+        {
+          "text": "Films",
+          "targetQuestionId": 401,
+          "waitTime": 2
+        },
+        {
+          "text": "Books",
+          "targetQuestionId": 401,
+          "waitTime": 2
+        },
+        {
+          "text": "Games",
+          "targetQuestionId": 401,
+          "waitTime": 4
+        },
+        {
+          "text": "Calendar",
+          "targetQuestionId": 401,
+          "waitTime": 6
+        }
+      ]
+    },
+    
+   {
+      "id": 401,
+      "text": "What graphics to use?",
+      "answers": [
+        {
+          "text": "Top Down",
+          "targetQuestionId": 402,
+          "waitTime": 3
+        },
+        {
+          "text": "3D",
+          "targetQuestionId": 402,
+          "waitTime": 6
+        },
+        {
+          "text": "Lateral Scroll",
+          "targetQuestionId": 402,
+          "waitTime": 4
+        },
+        {
+          "text": "Isometric",
+          "targetQuestionId": 402,
+          "waitTime": 2
+        }
+      ]
+    },
+   {
+      "id": 402,
+      "text": "What motor do you use?",
+      "answers": [
+        {
+          "text": "Own motor",
+          "targetQuestionId": 403,
+          "waitTime": 6
+        },
+        {
+          "text": "GameMaker",
+          "targetQuestionId": 403,
+          "waitTime": 3
+        },
+        {
+          "text": "Unity",
+          "targetQuestionId": 403,
+          "waitTime": 2
+        },
+        {
+          "text": "Unreal",
+          "targetQuestionId": 403,
+          "waitTime": 3
+        }
+      ]
+    },
+    {
+      "id": 403,
+      "text": "What do you need for a prototype?",
+      "answers": [
+        {
+          "text": "Dialogues",
+          "targetQuestionId": 404,
+          "waitTime": 2
+        },
+        {
+          "text": "Sound",
+          "targetQuestionId": 404,
+          "waitTime": 6
+        },
+        {
+          "text": "Mechanics",
+          "targetQuestionId": 404,
+          "waitTime": 3
+        },
+        {
+          "text": "Characters",
+          "targetQuestionId": 404,
+          "waitTime": 4
+        }
+      ]
+    },
+     {
+      "id": 404,
+      "text": "You have to design the elements. Choose!",
+      "answers": [
+        {
+          "text": "Decoration",
+          "targetQuestionId": 405,
+          "waitTime": 6
+        },
+        {
+          "text": "Interiors",
+          "targetQuestionId": 405,
+          "waitTime": 2
+        },
+        {
+          "text": "Scenarios",
+          "targetQuestionId": 405,
+          "waitTime": 6
+        },
+        {
+          "text": "Lighting",
+          "targetQuestionId": 405,
+          "waitTime": 4
+        }
+      ]
+    },
+	{
+      "id": 405,
+      "text": "Who will be the protagonist of the game?",
+      "answers": [
+        {
+          "text": "A detective",
+          "targetQuestionId": 406,
+          "waitTime": 2
+        },
+        {
+          "text": "A team",
+          "targetQuestionId": 406,
+          "waitTime": 2
+        },
+        {
+          "text": "A Superhero",
+          "targetQuestionId": 406,
+          "waitTime": 6
+        },
+        {
+          "text": "A duck",
+          "targetQuestionId": 406,
+          "waitTime": 4
+        }
+      ]
+    },
+	{
+      "id": 406,
+      "text": "How do you test the game?",
+      "answers": [
+        {
+          "text": "Ask for help",
+          "targetQuestionId": 407,
+          "waitTime": 2
+        },
+        {
+          "text": "Bribe",
+          "targetQuestionId": 407,
+          "waitTime": 2
+        },
+        {
+          "text": "Test ??",
+          "targetQuestionId": 407,
+          "waitTime": 6
+        },
+        {
+          "text": "Myself",
+          "targetQuestionId": 407,
+          "waitTime": 4
+        }
+      ]
+    },
+	{
+      "id": 407,
+      "text": "Final works...",
+      "answers": [
+        {
+          "text": "Graphics",
+          "targetQuestionId": 998,
+          "waitTime": 4
+        },
+        {
+          "text": "It's OK!",
+          "targetQuestionId": 998,
+          "waitTime": 6
+        },
+        {
+          "text": "Text",
+          "targetQuestionId": 998,
+          "waitTime": 2
+        },
+        {
+          "text": "Sound",
+          "targetQuestionId": 998,
+          "waitTime": 4
+        }
+      ]
+    }
+  ],
+"problems": [
+{
+  "id": 1,
+  "text": "The programmer has a severe bellyache and should be absent an hour, what should we do?",
+  "answers": [
+	{
+	  "text": "Try to do it ourselves",
+	  "effect": 3
+	},
+	{
+	  "text": "Look for help",
+	  "effect": 2
+	},
+	{
+	  "text": "Go without him",
+	  "effect": 4
+	},
+	{
+	  "text": "Cry a lot",
+	  "effect": 5
+	}
+  ]
+},
+{
+  "id": 2,
+  "text": "We have not got a sound artist yet, what should we do?",
+  "answers": [
+	{
+	  "text": "Find some",
+	  "effect": 2
+	},
+	{
+	  "text": "Turn around and scream",
+	  "effect": 5
+	},
+	{
+	  "text": "Call to Charlie",
+	  "effect": 4
+	},
+	{
+	  "text": "Search for free sounds",
+	  "effect": 1
+	}
+  ]
+},
+{
+  "id": 3,
+  "text": "Our graphic designer has not yet come and we have no material, what can we do?",
+  "answers": [
+	{
+	  "text": "Call it",
+	  "effect": 2
+	},
+	{
+	  "text": "Continue normally",
+	  "effect": 4
+	},
+	{
+	  "text": "Do it ourselves",
+	  "effect": 3
+	},
+	{
+	  "text": "Mmmmm...",
+	  "effect": 5
+	}
+  ]
+},
+{
+  "id": 4,
+  "text": "Team members argue about the project and fail to reach any decision, What do you want to do?",
+  "answers": [
+	{
+	  "text": "Look at the ceiling",
+	  "effect": 5
+	},
+	{
+	  "text": "A vote",
+	  "effect": 1
+	},
+	{
+	  "text": "Leave",
+	  "effect": 5
+	},
+	{
+	  "text": "Expose ideas",
+	  "effect": 2
+	}
+  ]
+},
+{
+  "id": 5,
+  "text": "A member of the team has come up with an online mode, what should we do?",
+  "answers": [
+	{
+	  "text": "No",
+	  "effect": 1
+	},
+	{
+	  "text": "So cool!",
+	  "effect": 4
+	},
+	{
+	  "text": "Try it",
+	  "effect": 5
+	},
+	{
+	  "text": "Sigh",
+	  "effect": 5
+	}
+  ]
+},
+{
+  "id": 6,
+  "text": "It's time to eat, how much time will we spend?",
+  "answers": [
+	{
+	  "text": "15 minutes",
+	  "effect": 2
+	},
+	{
+	  "text": "30 minutes",
+	  "effect": 3
+	},
+	{
+	  "text": "An hour",
+	  "effect": 4
+	},
+	{
+	  "text": "¿To eat?",
+	  "effect": 1
+	}
+  ]
+},
+{
+  "id": 7,
+  "text": "There comes a mentor with an evil face and very quickly towards us, what do we do ?",
+  "answers": [
+	{
+	  "text": "Mercy, please!",
+	  "effect": 5
+	},
+	{
+	  "text": "Pretend to work",
+	  "effect": 3
+	},
+	{
+	  "text": "Pay attention",
+	  "effect": 2
+	},
+	{
+	  "text": "My planet needs me",
+	  "effect": 5
+	}
+  ]
+},
+{
+  "id": 8,
+  "text": "TeleRoyers Pizzas Have Come! ",
+  "answers": [
+	{
+	  "text": "Run foolish!",
+	  "effect": 5
+	},
+	{
+	  "text": "Keep working",
+	  "effect": 1
+	},
+	{
+	  "text": "Take a piece",
+	  "effect": 2
+	},
+	{
+	  "text": "Take a box",
+	  "effect": 3
+	}
+  ]
+},
+{
+  "id": 9,
+  "text": "The project is getting too long, what do we do?",
+  "answers": [
+	{
+	  "text": "Cut",
+	  "effect": 1
+	},
+	{
+	  "text": "Hurry up",
+	  "effect": 2
+	},
+	{
+	  "text": "Blaming someone",
+	  "effect": 4
+	},
+	{
+	  "text": "To eat",
+	  "effect": 5
+	}
+  ]
+},
+{
+  "id": 10,
+  "text": "Many bugs have appeared in the game ...",
+  "answers": [
+	{
+	  "text": "Try to solve",
+	  "effect": 2
+	},
+	{
+	  "text": "look for help",
+	  "effect": 2
+	},
+	{
+	  "text": "Scape",
+	  "effect": 4
+	},
+	{
+	  "text": "Buuufff...",
+	  "effect": 5
+	}
+  ]
+},
+{
+  "id": 11,
+  "text": "One computer is burning!",
+  "answers": [
+	{
+	  "text": "¡AAAAAAAHHHH!",
+	  "effect": 5
+	},
+	{
+	  "text": "#@*!!",
+	  "effect": 5
+	},
+	{
+	  "text": "Save who can!",
+	  "effect": 5
+	},
+	{
+	  "text": "I'm Batman",
+	  "effect": 5
+	}
+  ]
+},
+{
+  "id": 12,
+  "text": "We've run out of chocolates!",
+  "answers": [
+	{
+	  "text": "Go to buy",
+	  "effect": 7
+	},
+	{
+	  "text": "Regret",
+	  "effect": 5
+	},
+	{
+	  "text": "Keep working",
+	  "effect": 1
+	},
+	{
+	  "text": "¡Noooooo!",
+	  "effect": 5
+	}
+  ]
+},
+{
+  "id": 12,
+  "text": "I can't open my chocolate ...",
+  "answers": [
+	{
+	  "text": "Evil laugh",
+	  "effect": 5
+	},
+	{
+	  "text": "Cry",
+	  "effect": 5
+	},
+	{
+	  "text": "Send to work",
+	  "effect": 1
+	},
+	{
+	  "text": "To help",
+	  "effect": 2
+	}
+  ]
+}
+]
+}
