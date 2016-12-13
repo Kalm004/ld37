@@ -10,7 +10,7 @@ public class GameHandler : MonoBehaviour {
     public static Difficulty difficulty = Difficulty.normal;
     public static bool finishing = false;
 
-    private string IntroText = "Bienvenidos a EscapeJam. \nEstáis encerrados en esta habitación hasta que terminéis vuestro juego... si la habitación no termina primero con vosotros.";
+    private string IntroText = texts.getIntroMessage();
 
     private const float timeShowFinishScreen = 20;
 
@@ -32,7 +32,8 @@ public class GameHandler : MonoBehaviour {
     private float timeToLose = 125;
     private float shakeDuration = 0.1f;
 
-    public TextAsset textAsset;
+    public TextAsset gameDataEnglish;
+    public TextAsset gameDataSpanish;
     public Text questionText;
     public Text answer1Text;
     public Text answer2Text;
@@ -80,6 +81,11 @@ public class GameHandler : MonoBehaviour {
 
     public AudioSource exclamationSound;
 
+    public Text gameStatusText;
+
+    public Text goodEndingText;
+    public Text badEndingText;
+
     private float? timeToSelect = null;
     private float timeToChangeBalloon = 0;
     private int currentBalloon = 0;
@@ -112,6 +118,22 @@ public class GameHandler : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        GameData gameData = null;
+        switch (language)
+        {
+            case Languages.SPANISH:
+                gameData = ObjectsFactory.getGameData(gameDataSpanish.text);
+                break;
+            case Languages.ENGLISH:
+                gameData = ObjectsFactory.getGameData(gameDataEnglish.text);
+                break;
+            default:
+                break;
+        }
+        gameStatusText.text = texts.getGameStatus();
+        goodEndingText.text = texts.getGoodFinalMessage();
+        badEndingText.text = texts.getBadFinalMessage();
+
         finishing = false;
         switch (difficulty)
         {
@@ -127,7 +149,7 @@ public class GameHandler : MonoBehaviour {
         oldPosition = transform.position;
         finished = true;
         discusionSound = GetComponent<AudioSource>();
-        GameData gameData = ObjectsFactory.getGameData(textAsset.text);
+
         problems = gameData.problems;
         int n = problems.Length;
         while (n > 1)
@@ -212,7 +234,7 @@ public class GameHandler : MonoBehaviour {
                         canvas.gameObject.SetActive(false);
                         currentProgress = 1;
                         float finalValue = (float)totalFailedQuestions / (float)totalQuestions;
-                        if (finalValue > 0.6f)
+                        if (finalValue > 0.5f)
                         {
                             winBadCanvas.gameObject.SetActive(true);
                             switch (nextQuestionId)

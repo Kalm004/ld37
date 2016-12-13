@@ -2,14 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class AscendingText : MonoBehaviour {
 
 	public Transform creditText;
 	public GameObject gameObject;
+    public Text text;
+    public Text buttonText;
 	void Start () {
-		
-	}
+        text.text = GameHandler.texts.getCreditsContent();
+        buttonText.text = GameHandler.texts.getCreditsMainMenu();
+    }
 	
 	// Update is called once per frame
 	void Update () {

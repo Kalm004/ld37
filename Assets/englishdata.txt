@@ -2,7 +2,7 @@
   "questions": [
     {
       "id": 0,
-      "text": "What do you do?",
+      "text": "Which time of game do you want to create?",
       "answers": [
         {
           "text": "Platform",
@@ -28,7 +28,7 @@
     },
         {
       "id": 100,
-      "text": "What are your references?",
+      "text": "Which are your references?",
       "answers": [
         {
           "text": "Films",
@@ -55,7 +55,7 @@
     
    {
       "id": 101,
-      "text": "What graphics to use?",
+      "text": "Which type of graphics do you want to use?",
       "answers": [
         {
           "text": "Top Down",
@@ -81,10 +81,10 @@
     },
    {
       "id": 102,
-      "text": "What motor do you use?",
+      "text": "Which motor do you want to use?",
       "answers": [
         {
-          "text": "Own motor",
+          "text": "Your own motor",
           "targetQuestionId": 103,
           "waitTime": 6
         },
@@ -107,7 +107,7 @@
     },
     {
       "id": 103,
-      "text": "What do you need for a prototype?",
+      "text": "What will be the most relevant part of your prototype?",
       "answers": [
         {
           "text": "Dialogues",
@@ -133,7 +133,7 @@
     },
      {
       "id": 104,
-      "text": "You have to design the elements. Choose!",
+      "text": "It's time to design some graphics for your game. Which one is your choice?",
       "answers": [
         {
           "text": "Interiors",
@@ -159,7 +159,7 @@
     },
 	{
       "id": 105,
-      "text": "Who will be the protagonist of the game?",
+      "text": "Who will be the main character of your game?",
       "answers": [
         {
           "text": "Mary Poppins",
@@ -172,7 +172,7 @@
           "waitTime": 6
         },
         {
-          "text": "A Superheroe",
+          "text": "A Superhero",
           "targetQuestionId": 106,
           "waitTime": 4
         },
@@ -185,7 +185,7 @@
     },
 	{
       "id": 106,
-      "text": "How do you test the game?",
+      "text": "How will you test your game?",
       "answers": [
         {
           "text": "Ask for help",
@@ -193,17 +193,17 @@
           "waitTime": 2
         },
         {
-          "text": "To bribe",
+          "text": "Bribe",
           "targetQuestionId": 107,
           "waitTime": 2
         },
         {
-          "text": "To test??",
+          "text": "Test??",
           "targetQuestionId": 107,
           "waitTime": 6
         },
         {
-          "text": "Myself",
+          "text": "Do it myself",
           "targetQuestionId": 107,
           "waitTime": 4
         }
@@ -237,7 +237,7 @@
     },
 	{
       "id": 200,
-      "text": "What are your references?",
+      "text": "Which are your references?",
       "answers": [
         {
           "text": "Films",
@@ -264,7 +264,7 @@
     
    {
       "id": 201,
-      "text": "What graphics to use?",
+      "text": "Which type of graphics do you want to use?",
       "answers": [
         {
           "text": "Top Down",
@@ -290,10 +290,10 @@
     },
    {
       "id": 202,
-      "text": "What motor do you use?",
+      "text": "Which motor do you want to use?",
       "answers": [
         {
-          "text": "Own motor",
+          "text": "Your own motor",
           "targetQuestionId": 203,
           "waitTime": 6
         },
@@ -316,7 +316,7 @@
     },
     {
       "id": 203,
-      "text": "What do you need for a prototype?",
+      "text": "What will be the most relevant part of your prototype?",
       "answers": [
         {
           "text": "Dialogues",
@@ -342,7 +342,7 @@
     },
      {
       "id": 204,
-      "text": "You have to design the elements. Choose!",
+      "text": "It's time to design some graphics for your game. Which one is your choice?",
       "answers": [
         {
           "text": "Interiors",
@@ -368,7 +368,7 @@
     },
 	{
       "id": 205,
-      "text": "Who will be the protagonist of the game?",
+      "text": "Who will be the main character of your game?",
       "answers": [
         {
           "text": "Predator",
@@ -394,7 +394,7 @@
     },
 	{
       "id": 206,
-      "text": "How do you test the game?",
+      "text": "How will you test your game?",
       "answers": [
         {
           "text": "Ask for help",
@@ -402,7 +402,7 @@
           "waitTime": 2
         },
         {
-          "text": "To bribe",
+          "text": "Bribe",
           "targetQuestionId": 207,
           "waitTime": 2
         },
@@ -412,7 +412,7 @@
           "waitTime": 6
         },
         {
-          "text": "Myself",
+          "text": "Do it myself",
           "targetQuestionId": 207,
           "waitTime": 4
         }
@@ -420,7 +420,7 @@
     },
 	{
       "id": 207,
-      "text": "Final works...",
+      "text": "Final touches...",
       "answers": [
         {
           "text": "Graphics",
@@ -446,7 +446,7 @@
     },
 	{
       "id": 300,
-      "text": "What are your references?",
+      "text": "Which are your references?",
       "answers": [
         {
           "text": "Films",
@@ -473,7 +473,7 @@
     
    {
       "id": 301,
-      "text": "What graphics to use?",
+      "text": "Which type of graphics do you want to use?",
       "answers": [
         {
           "text": "Top Down",
@@ -499,10 +499,10 @@
     },
    {
       "id": 302,
-      "text": "What motor do you use?",
+      "text": "Which motor do you want to use?",
       "answers": [
         {
-          "text": "Own Motor",
+          "text": "Your own motor",
           "targetQuestionId": 303,
           "waitTime": 6
         },
@@ -525,7 +525,7 @@
     },
     {
       "id": 303,
-      "text": "What do you need for a prototype?",
+      "text": "What will be the most relevant part of your prototype?",
       "answers": [
         {
           "text": "Dialogues",
@@ -551,7 +551,7 @@
     },
      {
       "id": 304,
-      "text": "You have to design the elements. Choose!",
+      "text": "It's time to design some graphics for your game. Which one is your choice?",
       "answers": [
         {
           "text": "Interiors",
@@ -577,7 +577,7 @@
     },
 	{
       "id": 305,
-      "text": "Who will be the protagonist of the game?",
+      "text": "Who will be the main character of your game?",
       "answers": [
         {
           "text": "Godzilla",
@@ -603,7 +603,7 @@
     },
 	{
       "id": 306,
-      "text": "How do you test the game?",
+      "text": "How will you test your game?",
       "answers": [
         {
           "text": "Ask for help",
@@ -611,7 +611,7 @@
           "waitTime": 2
         },
         {
-          "text": "To bribe",
+          "text": "Bribe",
           "targetQuestionId": 307,
           "waitTime": 2
         },
@@ -621,7 +621,7 @@
           "waitTime": 6
         },
         {
-          "text": "Myself",
+          "text": "Do it myself",
           "targetQuestionId": 307,
           "waitTime": 4
         }
@@ -629,7 +629,7 @@
     },
 	{
       "id": 307,
-      "text": "Final works...",
+      "text": "Final touches...",
       "answers": [
         {
           "text": "Graphics",
@@ -637,7 +637,7 @@
           "waitTime": 2
         },
         {
-          "text": "PERFECT!",
+          "text": "It's PERFECT!",
           "targetQuestionId": 997,
           "waitTime": 6
         },
@@ -655,7 +655,7 @@
     },
 	{
       "id": 400,
-      "text": "What are your references?",
+      "text": "Which are your references?",
       "answers": [
         {
           "text": "Films",
@@ -682,7 +682,7 @@
     
    {
       "id": 401,
-      "text": "What graphics to use?",
+      "text": "Which type of graphics do you want to use?",
       "answers": [
         {
           "text": "Top Down",
@@ -708,10 +708,10 @@
     },
    {
       "id": 402,
-      "text": "What motor do you use?",
+      "text": "Which motor do you want to use?",
       "answers": [
         {
-          "text": "Own motor",
+          "text": "Your own motor",
           "targetQuestionId": 403,
           "waitTime": 6
         },
@@ -734,7 +734,7 @@
     },
     {
       "id": 403,
-      "text": "What do you need for a prototype?",
+      "text": "What will be the most relevant part of your prototype?",
       "answers": [
         {
           "text": "Dialogues",
@@ -760,7 +760,7 @@
     },
      {
       "id": 404,
-      "text": "You have to design the elements. Choose!",
+      "text": "It's time to design some graphics for your game. Which one is your choice?",
       "answers": [
         {
           "text": "Decoration",
@@ -786,7 +786,7 @@
     },
 	{
       "id": 405,
-      "text": "Who will be the protagonist of the game?",
+      "text": "Who will be the main character of your game?",
       "answers": [
         {
           "text": "A detective",
@@ -812,7 +812,7 @@
     },
 	{
       "id": 406,
-      "text": "How do you test the game?",
+      "text": "How will you test your game?",
       "answers": [
         {
           "text": "Ask for help",
@@ -830,7 +830,7 @@
           "waitTime": 6
         },
         {
-          "text": "Myself",
+          "text": "Do it myself",
           "targetQuestionId": 407,
           "waitTime": 4
         }
@@ -838,7 +838,7 @@
     },
 	{
       "id": 407,
-      "text": "Final works...",
+      "text": "Final touches...",
       "answers": [
         {
           "text": "Graphics",
@@ -866,7 +866,7 @@
 "problems": [
 {
   "id": 1,
-  "text": "The programmer has a severe bellyache and should be absent an hour, what should we do?",
+  "text": "The programmer has a severe stomachache and she shouldn't be available for one hour, what should we do?",
   "answers": [
 	{
 	  "text": "Try to do it ourselves",
@@ -877,7 +877,7 @@
 	  "effect": 2
 	},
 	{
-	  "text": "Go without him",
+	  "text": "Continue without her",
 	  "effect": 4
 	},
 	{
@@ -888,10 +888,10 @@
 },
 {
   "id": 2,
-  "text": "We have not got a sound artist yet, what should we do?",
+  "text": "We don't have a sound artist yet, what should we do?",
   "answers": [
 	{
-	  "text": "Find some",
+	  "text": "Find one",
 	  "effect": 2
 	},
 	{
@@ -899,7 +899,7 @@
 	  "effect": 5
 	},
 	{
-	  "text": "Call to Charlie",
+	  "text": "Call Charlie",
 	  "effect": 4
 	},
 	{
@@ -910,7 +910,7 @@
 },
 {
   "id": 3,
-  "text": "Our graphic designer has not yet come and we have no material, what can we do?",
+  "text": "Our graphic designer hasn't arrive yet and we need one, what can we do?",
   "answers": [
 	{
 	  "text": "Call it",
@@ -932,7 +932,7 @@
 },
 {
   "id": 4,
-  "text": "Team members argue about the project and fail to reach any decision, What do you want to do?",
+  "text": "Team members argue about the project and fail to reach any decision. What should we do?",
   "answers": [
 	{
 	  "text": "Look at the ceiling",
@@ -954,7 +954,7 @@
 },
 {
   "id": 5,
-  "text": "A member of the team has come up with an online mode, what should we do?",
+  "text": "A member of the team has come up with an online mode, what do you say to him?",
   "answers": [
 	{
 	  "text": "No",
@@ -970,7 +970,7 @@
 	},
 	{
 	  "text": "Sigh",
-	  "effect": 5
+	  "effect": 3
 	}
   ]
 },
@@ -991,14 +991,14 @@
 	  "effect": 4
 	},
 	{
-	  "text": "¿To eat?",
+	  "text": "Eat?",
 	  "effect": 1
 	}
   ]
 },
 {
   "id": 7,
-  "text": "There comes a mentor with an evil face and very quickly towards us, what do we do ?",
+  "text": "There comes a mentor with an evil face and very quickly towards us, what do we do?",
   "answers": [
 	{
 	  "text": "Mercy, please!",
@@ -1020,7 +1020,7 @@
 },
 {
   "id": 8,
-  "text": "TeleRoyers Pizzas Have Come! ",
+  "text": "TeleRoyers Pizzas have Come! ",
   "answers": [
 	{
 	  "text": "Run foolish!",
@@ -1035,7 +1035,7 @@
 	  "effect": 2
 	},
 	{
-	  "text": "Take a box",
+	  "text": "Take a whole pizza!",
 	  "effect": 3
 	}
   ]
@@ -1057,25 +1057,25 @@
 	  "effect": 4
 	},
 	{
-	  "text": "To eat",
+	  "text": "Eat",
 	  "effect": 5
 	}
   ]
 },
 {
   "id": 10,
-  "text": "Many bugs have appeared in the game ...",
+  "text": "Many bugs have arise in the game ...",
   "answers": [
 	{
-	  "text": "Try to solve",
+	  "text": "Try to solve them",
 	  "effect": 2
 	},
 	{
-	  "text": "look for help",
+	  "text": "Look for help",
 	  "effect": 2
 	},
 	{
-	  "text": "Scape",
+	  "text": "Run away",
 	  "effect": 4
 	},
 	{
@@ -1090,19 +1090,19 @@
   "answers": [
 	{
 	  "text": "¡AAAAAAAHHHH!",
-	  "effect": 5
+	  "effect": 4
 	},
 	{
 	  "text": "#@*!!",
-	  "effect": 5
+	  "effect": 3
 	},
 	{
 	  "text": "Save who can!",
-	  "effect": 5
+	  "effect": 3
 	},
 	{
 	  "text": "I'm Batman",
-	  "effect": 5
+	  "effect": 1
 	}
   ]
 },
@@ -1111,7 +1111,7 @@
   "text": "We've run out of chocolates!",
   "answers": [
 	{
-	  "text": "Go to buy",
+	  "text": "Buy some",
 	  "effect": 7
 	},
 	{
@@ -1145,7 +1145,7 @@
 	  "effect": 1
 	},
 	{
-	  "text": "To help",
+	  "text": "Bring help",
 	  "effect": 2
 	}
   ]

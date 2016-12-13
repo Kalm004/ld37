@@ -20,23 +20,27 @@ public class QuestionsController : MonoBehaviour {
     {
         gameHandler.answerSelected(1);
 		clickSound.Play ();
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     }
 
     public void onAnswer2Click()
     {
         gameHandler.answerSelected(2);
 		clickSound.Play ();
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     }
 
     public void onAnswer3Click()
     {
         gameHandler.answerSelected(3);
 		clickSound.Play ();
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     }
 
     public void onAnswer4Click()
     {
         gameHandler.answerSelected(4);
 		clickSound.Play ();
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     }
 }
